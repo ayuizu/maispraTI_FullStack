@@ -1,19 +1,20 @@
-//*Exercicio 08 - Ordem crescente
-/*Escreva um algoritmo para ler 2 valores (considere que não serão lidos valores iguais)
-e escreve-los em ordem crescente.*/
+//*-----------------Exercicio 12-----------------
+
 const prompt = require('prompt-sync')();
-console.log("Dois números em ordem crescente");
-//?Dados de entrada
-let num1 = parseFloat(prompt("Digite o 1º número: "));
-let num2 = num1;
-//?Processamento e Saída
-do{
-    num2=parseFloat(prompt("Digite o 2º número: "));
-}while(num2==num1);
-if(num1<num2){
-    console.log("Números em ordem crescente: ",num1,", ",num2);
-}else{
-    console.log("Números em ordem crescente: ",num2,", ",num1);
+console.log("O número é par ou ímpar?");
+console.log("--Digite 0 ou um valor negativo para sair.\n");
+
+let num1=1;
+while(num1>0){
+    num1=parseInt(prompt("Digite um número inteiro: "));
+    if(num1<=0){
+        break;
+    }else if(num1%2==0){
+        console.log(num1, "é um número é par.\n");
+    }else{
+        console.log(num1, "é um número é ímpar.\n");
+    }
 }
-
-
+if(num1<=0){
+    console.log("Fim do programa");
+}
