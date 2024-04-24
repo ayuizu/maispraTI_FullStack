@@ -7,7 +7,7 @@ Para executar os exercícios, será necessário alguns passos:
 * Abra o terminal na pasta
 * Digite no terminal `npm install prompt-sync` e dê Enter
 2. Descomentar o código do exercício
-* Selecione o código entre 
+* Selecione o código entre a divisão dos exercícios  `//*----Exercício N---`
 * Dê Ctrl+;
 * Após a execução, não esqueça de transformar o código de volta em comentário
 
