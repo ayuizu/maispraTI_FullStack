@@ -1,13 +1,19 @@
-//*Exercicio 02 - Percentual de votos em eleição em um município
+//*Exercicio 08 - Ordem crescente
+/*Escreva um algoritmo para ler 2 valores (considere que não serão lidos valores iguais)
+e escreve-los em ordem crescente.*/
 const prompt = require('prompt-sync')();
-//Dados de entrada
-let eleitores = parseInt(prompt("Digite o numero de eleitores: "));
-let votosBrancos = parseInt(prompt("Digite o numero de votos brancos: "));
-let votosNulos = parseInt(prompt("Digite o numero de votos nulos: "));
-let votosValidos = parseInt(prompt("Digite o numero de votos válidos: "));
-//Processamento
-let percentualVotosBrancos=(votosBrancos/eleitores)*100;
-let percentualVotosNulos=(votosNulos/eleitores)*100;
-let percentualVotosValidos=(votosValidos/eleitores)*100;
-//Saida
-console.log("Brancos: " + percentualVotosBrancos + "%" + "\nNulos: " + percentualVotosNulos + "%" + "\nVálidos: " + percentualVotosValidos + "%");
+console.log("Dois números em ordem crescente");
+//?Dados de entrada
+let num1 = parseFloat(prompt("Digite o 1º número: "));
+let num2 = num1;
+//?Processamento e Saída
+do{
+    num2=parseFloat(prompt("Digite o 2º número: "));
+}while(num2==num1);
+if(num1<num2){
+    console.log("Números em ordem crescente: ",num1,", ",num2);
+}else{
+    console.log("Números em ordem crescente: ",num2,", ",num1);
+}
+
+
