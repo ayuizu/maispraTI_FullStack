@@ -1,5 +1,17 @@
 //*-----------------Exercicio 01-----------------
-
+// let prompt = require("prompt-sync")();
+// console.log("Conversor de temperatura em Celsius para Farenheit");
+// let temperaturaCelsius = prompt("Digite uma temperatura em graus celsius: ");
+// if (temperaturaCelsius >= -273.15) {
+//   let temperaturaFarenheit = (temperaturaCelsius * 9) / 5 + 32;
+//   console.log(
+//     "A temperatura acima equivale a " +
+//       temperaturaFarenheit +
+//       " graus Farenheit."
+//   );
+// } else {
+//   console.log("A temperatura digitada é inválida.");
+// }
 
 //*-----------------Exercicio 02-----------------
 
@@ -51,7 +63,7 @@
 
 // if(media>=6){
 //     console.log("Parabéns! Você foi aprovado.");
-// } 
+// }
 
 //*-----------------Exercicio 05-----------------
 
@@ -148,7 +160,7 @@
 // }else if(numOrigem>=10 && numOrigem<=20){
 //     console.log("Região de origem: Centro-Oeste");
 // }else{
-//     console.log("Região de origem: Extrangeiro/Importado");    
+//     console.log("Região de origem: Extrangeiro/Importado");
 // }
 
 //*-----------------Exercicio 10-----------------
@@ -196,4 +208,3 @@
 //         console.log(j,"x",N1,"=",j*N1);
 //     }
 // }
-
