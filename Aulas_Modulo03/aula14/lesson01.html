@@ -1,0 +1,212 @@
+<!-- Informando tipo de arquivo -->
+<!DOCTYPE html>
+<html>
+  <!--Cabeçalho-->
+  <head>
+    <!-- Área de cabeçalho e informações dobre o documento -- como site vai ser configurado -- não aparece para o usuário -->
+    
+    <meta charset="utf-8"> <!-- Tag META define metadados e charset (conj caracteres) define qual conj sera usado -->
+    
+    <html lang="pt-br"> <!-- Atributo lang indica linguagem do documento; ajuda mecanismos de busca -->
+    
+    <title>Página Principal</title> <!-- Titulo do site/pagina (aparece na aba do navegador) -->
+    
+    <meta name="keywords" content="curso de front-end com web, html5, css3, js"> <!-- Tag META define palavras chave para buscas -->
+
+    <meta name="author" content="Professor Edu"> <!-- Tag META define autor para buscas -->
+  </head>
+  <!--Corpo da página-->
+  <body>
+    <!--Barra de navegação com TABLE (colocado ao final da aula)-->
+    <table border="0" width="1080" align="center">
+      <tr>
+        <td align="right">
+          <a href="index.html">Página Inicial</a>
+          <a href="sobre.html">Sobre mim</a>
+          <a href="contato.html">Contato</a>
+          <a href="lesson01.html">Mais</a>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Títulos -->
+    <h1>Hello World</h1>
+
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+    <!-- Horizontal Row -->
+    <hr />
+    <!-- Texto <p> e Break Row <br/>-->
+    <p>
+      A <abbr title="Universidade Federal do Rio Grande do Sul">UFRGS</abbr> foi fundada em 1850.<br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nesciunt
+      dolor molestias quas, maxime sit <br />odio enim? Reiciendis laboriosam
+      molestiae minus. Esse, <br />consequatur illum quod doloremque obcaecati
+      voluptatibus quam doloribus! <!--Citações--> <cite>Texto em italico para citações - Timothy John Berners-Lee KBE, OM, FRS (TimBL ou TBL) </cite>
+      
+    </p>
+    <!--Citações--> 
+    <q>Texto entre aspas para citações</q>
+    <blockquote cite="https://pt.wikipedia.org/wiki/Tim_Berners-Lee">Citações longas - Timothy John Berners-Lee KBE, OM, FRS (TimBL ou TBL) (Londres, 8 de junho de 1955[1]) é um físico britânico, cientista da computação e professor do MIT. É o criador da World Wide Web, tendo feito a primeira proposta para sua criação a 12 de março de 1989.[2][3] Em 25 de dezembro de 1990, com a ajuda de Robert Cailliau e de um jovem estudante do CERN, implementou a primeira comunicação bem-sucedida entre um cliente HTTP e o servidor através da internet.</blockquote>
+    <!-- Link a = anchor, href hyper -->
+    <a href="https://github.com/">Página GitHub</a>
+    <hr />
+    <!-- Estilização de texto -->
+    <h2>Estilização</h2>
+    <P>Este é um texto em <strong>negrito</strong></P>
+    <p>Este é um texto em itálico </p>
+    <p>Este é um texto underline </p>
+    <p>Este é um texto <strike>errado</strike> </p>
+    <p>Este é um texto com ênfase </p>
+    <h3>Mapa do site</h3>
+
+    <!-- Lista desordenada - Unordered list-->
+    <ul type="circle">
+      <!--circle - bolinha vazada-->
+      <li>Sala de Trofeus</li>
+      <li>Infraestrutura do Estádio</li>
+      <li>Salão de Festas</li>
+    </ul>
+    <!--Lista ordenada - Ordered list-->
+    <ol type="number">
+      <li>Sala de Trofeus</li>
+      <li>Infraestrutura do Estádio</li>
+      <li>Salão de Festas</li>
+    </ol>
+    <ol type="A">
+      <li>Sala de Trofeus</li>
+      <li>Infraestrutura do Estádio</li>
+      <li>Salão de Festas</li>
+    </ol>
+    <ol type="I">
+      <li>Sala de Trofeus</li>
+      <li>Infraestrutura do Estádio</li>
+      <li>Salão de Festas</li>
+    </ol>
+    <!-- Imagens -->
+    <img
+      src="https://images.vexels.com/media/users/3/231529/isolated/preview/064fbc4237705ad31185db9835b80a5e-flor-rosa-aquarela.png"
+      alt="Flor rosa em aquarela"
+    />
+  </body>
+  <!-- Tabelas -->
+  <table border="2" width="100%">
+    <!-- Table row = linha -->
+    <tr>
+      <!-- Table header = cabeçalho -->
+      <th>Código</th>
+      <th>Produto</th>
+      <th>Preço</th>
+    </tr>
+    <tr>
+      <!-- Table data = outras linhas -->
+      <td>1</td>
+      <td>Notebook</td>
+      <td>R$ 4.000,00</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Mouse</td>
+      <td>R$ 80,00</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Teclado</td>
+      <td>R$ 120,00</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Desconto</td>
+      <td colspan="2">Cupom R$ 100,00</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td colspan="2">R$ 4.100,00</td>
+    </tr>
+  </table>
+  <hr />
+  <!-- Criar uma tabela -->
+  <table border="1" width="100%">
+    <tr>
+      <th>Código</th>
+      <th>Título</th>
+      <th>Autor</th>
+      <th>Valor</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>O Gigante Enterrado</td>
+      <td>Kazuo Ishiguro</td>
+      <td>R$ 89,90</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Norwegian Wood</td>
+      <td>Haruki Murakami</td>
+      <td>R$ 79,90</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Herdeiras do Mar</td>
+      <td>Mary Lynn Bracht</td>
+      <td>R$ 59,90</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Pagamento</td>
+      <td>Valor total</td>
+      <td colspan="2">R$ 229,70</td>
+    </tr>
+    <tr>
+      <td>Desconto - Cupom R$ 10,00</td>
+      <td colspan="2">-R$ 10,00</td>
+    </tr>
+    <tr>
+      <td>Total a pagar</td>
+      <td colspan="2">R$ 219,70</td>
+    </tr>
+  </table>
+  <!-- Formulários -->
+  <h2>Formulário de cadastro</h2>
+  <form action="">
+    Email:
+    <input
+      type="text"
+      name="email"
+      placeholder="exemplo@gmail.com"
+    /><br /><br />
+    Login: <input type="text" name="login" /><br /><br />
+    Senha: <input type="password" name="senha" /><br /><br />
+    Gênero: <input type="radio" name="genero" value="M" />Masculino
+    <input type="radio" name="genero" value="F" />Feminino
+    <input type="radio" name="genero" value="O" />Outro<br /><br />
+
+    Interesses<br />
+    <input type="checkbox" name="interesses" />Desenvolvimento Front-End<br />
+    <input type="checkbox" name="interesses" />Desenvolvimento Back-end<br />
+    <input type="checkbox" name="interesses" />Desenvolvimento Mobile<br />
+    <input type="checkbox" name="interesses" />Devops<br />
+    <input type="checkbox" name="interesses" />Desenvolvimento Fullstack<br /><br />
+
+    Estado<br />
+    <select name="Estado">
+      <option value="rs">RS</option>
+      <option value="sc">SC</option>
+      <option value="pr">PR</option>
+      <option value="sp">SP</option>
+      <option value="rj">RJ</option>
+      <option value="mg">MG</option></select
+    ><br /><br />
+
+    Observações: <br />
+    <textarea> </textarea><br /><br />
+
+    <input type="submit" value="Cadastrar" />
+  </form>
+
+  <h2>Caracteres Especiais</h2>
+
+  <!-- &alt; &gt ; &amp = &; &reg = R registrado-->
+  Home &reg; - Quem somos - Contato - &gt;
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML is onlu a structure</title>
+  </head>
+  <body>
+    <h1>HTML is structure only</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+      repellat iste nulla, excepturi asperiores harum repellendus fugit
+      blanditiis molestiae optio reiciendis quibusdam, praesentium qui
+      dignissimos libero laudantium fuga? Deleniti, eius?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe totam,
+      odit suscipit numquam labore tenetur doloribus natus eius sed id, veniam
+      voluptas neque adipisci qui quas necessitatibus nostrum quibusdam
+      aspernatur.
+    </p>
+    <footer>
+      <hr />
+      <p>Suporte técnico: vamosResponder-sim-acredita@servidor-caiu.com</p>
+    </footer>
+    <hr />
+    <hr />
+    <!--Com CSS inline (dentro do HTML)-->
+    <h1 style="color: green; font-size: 60px; text-align: center">
+      HTML is structure only
+    </h1>
+    <p style="margin: 0 100 px 0 100px; font-size: 1.5rem">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+      repellat iste nulla, excepturi asperiores harum repellendus fugit
+      blanditiis molestiae optio reiciendis quibusdam, praesentium qui
+      dignissimos libero laudantium fuga? Deleniti, eius?
+    </p>
+    <p style="text-align: right">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe totam,
+      odit suscipit numquam labore tenetur doloribus natus eius sed id, veniam
+      voluptas neque adipisci qui quas necessitatibus nostrum quibusdam
+      aspernatur.
+    </p>
+    <footer
+      style="text-align: center"
+      onclick="alert('Nos enviar e-mail é inútil, ninguém vai ver')"
+    >
+      <hr />
+      <p>Suporte técnico: vamosResponder-sim-acredita@servidor-caiu.com</p>
+    </footer>
+    <h2>Formulário de cadastro</h2>
+    <fieldset>
+        <form id="cadastro" method="POST" action="mailto:professoredu@codifica.edu">
+        Nome:<input type="text" name="nome" id="idNome" size="20" maxlength="12"/><br /><br />
+        Login:<input type="text" name="login" id="idLogin"/><br /><br />
+        Sexo: <input type="radio" name="sexo" value="M">Masculino</input><input type="radio" name="sexo" value="F">Feminino</input><br><br>
+
+        Estado<br />
+        <select name="Estado">
+            <optgroup label="Sul">
+                <option value="rs">RS</option>
+                <option value="sc">SC</option>
+                <option value="pr">PR</option>
+            </optgroup>
+
+            <optgroup label="Sudeste">
+                <option value="sp">SP</option>
+                <option value="rj">RJ</option>
+                <option value="mg">MG</option>
+            </optgroup></select><br /><br />
+            
+        Cidade<br />
+        <select name="cidade">
+            <optgroup label="RS">
+                <option value="portoAlegre">Porto Alegre</option>
+                <option value="caxiasDoSul">Caxias do Sul</option>
+                <option value="rioGrande">Rio Grande</option>
+            </optgroup>
+            <optgroup label="SC">
+                <option value="florianopolis">Florianópolis</option>
+                <option value="imbituba">Imbituba</option>
+                <option value="bombinhas">bombinhas</option>
+            </optgroup></select><br /><br />
+
+        Cidade <br>
+        <datalist name="cidade"> <!--???-->
+
+                <option value="portoAlegre">Porto Alegre</option>
+                <option value="caxiasDoSul">Caxias do Sul</option>
+                <option value="rioGrande">Rio Grande</option>
+                <option value="florianopolis">Florianópolis</option>
+                <option value="imbituba">Imbituba</option>
+                <option value="bombinhas">bombinhas</option>
+        </form>
+    </fieldset>
+    <!-- Colocar videos e mapas no site -->
+    <iframe src="https://youtu.be/_2quiyHfJQw?feature=shared" frameborder="0" style="border:0" width="600"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13816.988646243704!2d-51.2405550438956!3d-30.02976627146877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519790e4d043eab%3A0x769a0820bae18fd4!2sCentro%20Hist%C3%B3rico%2C%20Porto%20Alegre%20-%20RS!5e0!3m2!1spt-BR!2sbr!4v1716043042634!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </body>
+</html>
