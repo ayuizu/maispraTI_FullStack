@@ -1,0 +1,77 @@
+.listaNaoOrdenada {
+  list-style-type: square;
+  background-color: rgb(120, 120, 204);
+  font-size: 1rem;
+}
+.listaOrdenada {
+  background-color: rgb(106, 150, 106);
+  font-size: 2rem;
+}
+
+nav#menu {
+  width: 100%;
+  display: block flex;
+  border: 1px solid rgb(92, 29, 126);
+  position: fixed;
+  padding: 0px 30px;
+  background-color: rgb(241, 241, 241);
+
+  left: 0;
+  top: 0;
+}
+
+nav#menu ul {
+  list-style-type: none;
+}
+nav#menu li {
+  display: inline-block;
+  border: 1px solid rgb(112, 60, 139) solid;
+  background-color: rgb(213, 179, 231);
+  padding: 10px;
+}
+
+nav#menu li:hover {
+  background-color: rgb(184, 71, 245);
+}
+/* Margin: espaçamento entre 2 elementos
+Padding: espaçamento entre conteúdo e borda */
+table {
+  width: 500px;
+  border: 1px rgb(112, 60, 139);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th,
+td {
+  border: 0.5px solid rgb(112, 60, 139);
+}
+th {
+  background-color: rgb(213, 179, 231);
+}
+tr {
+  height: 2rem;
+}
+tbody tr:hover {
+  background-color: rgb(146, 106, 168);
+  cursor: crosshair;
+}
+tfoot tr td {
+  border: 0;
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+/* .booksTable {
+  border: 1px solid black;
+  background-color: aquamarine;
+} */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+.listaTermos {
+  margin-top: 6rem;
+}

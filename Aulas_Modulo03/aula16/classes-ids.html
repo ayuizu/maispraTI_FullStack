@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes e IDs</title>
+    <style type="text/css">
+      #principal {
+        background-color: rgb(152, 177, 218);
+      }
+      .cor-paragrafo1 {
+        color: rgb(23, 66, 53);
+      }
+      .cor-paragrafo2 {
+        color: rgb(119, 73, 12);
+      }
+      #destaque {
+        color: rgb(253, 176, 60);
+      }
+      #topo {
+        background-color: rgb(253, 176, 60);
+        border: 1px solid whitesmoke;
+      }
+      #conteudo {
+        background-color: rgb(235, 192, 129);
+        font-size: 1rem;
+      }
+      #rodape {
+        background-color: rgb(235, 192, 129);
+      }
+      .produtos {
+        font-size: 1rem;
+        border: 1px solid blue;
+      }
+      .imagem {
+        height: 100px;
+      }
+      a:link {
+        text-decoration: none; /*retira toda estilização */
+        /* Quando ainda não foi visitado, nem estamos interagindo */
+        color: whitesmoke;
+      }
+
+      a:hover {
+        /* Quando cursor passa por cima */
+        color: violet;
+        text-transform: uppercase;
+        cursor: crosshair;
+      }
+      a:active {
+        /* Quando é clicado */
+        color: orange;
+      }
+      a:visited {
+        /* Quando já foi visitado */
+        color: gray;
+      }
+    </style>
+  </head>
+  <body id="principal">
+    <div id="topo">
+      <img class="imagem" src="./img/orangeFlower.webp" alt="" />
+    </div>
+    <div id="conteudo">
+      <h1>Classes e IDs</h1>
+      <!--? ID: identificador unitário dentro de um site; não repete -->
+      <!--? CLASS: permite manipular diversos componentes do site sob um -->
+      <h2>Classes</h2>
+      <p class="cor-paragrafo1">
+        Identificado como ".nomeDaClasse" e usado dentro da tag como
+        class="nomeDaClasse"
+      </p>
+      <p class="cor-paragrafo2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore iusto
+        labore officia itaque rerum
+        <span id="destaque">RIO GRANDE DO SUL</span>veritatis consectetur
+        facilis beatae, nulla nesciunt autem distinctio voluptatum quidem error
+        in necessitatibus molestias quod optio.
+      </p>
+      <h2>IDs</h2>
+      <p>
+        Idenficiado como "#nomeDaId" e usado dentro da tag como id="nomeDaId"
+      </p>
+    </div>
+    <div>
+      <ul>
+        <li>
+          Produto1
+          <a href="#" target="_blank">Mais detalhes</a>
+        </li>
+        <li>
+          Produto2
+          <a href="https://github.com/" target="_blank">Mais detalhes</a>
+        </li>
+        <li>
+          Produto3
+          <a href="https://amazon.com/" target="_blank">Mais detalhes</a>
+        </li>
+      </ul>
+    </div>
+    <div id="rodape">
+      <p>Todos os direitos reservados</p>
+    </div>
+  </body>
+</html>

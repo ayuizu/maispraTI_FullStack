@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Estilização de listas</title>
+    <link rel="stylesheet" href="listas-style.css" />
+  </head>
+  <body>
+    <nav id="menu">
+      <h1>Menu principal</h1>
+      <ul type="disc">
+        <li><a href="#">Início</a></li>
+        <li>Menu 2</li>
+        <li>Menu 3</li>
+        <li>Menu 4</li>
+        <li>Menu 5</li>
+        <li><a href="#tabela1">Tabela 1</a></li>
+      </ul>
+    </nav>
+
+    <div class="listaTermos">
+      <p>Lista de termos</p>
+      <dl>
+        <dt>Switch</dt>
+        <dd>
+          Dispositivo utilizado em redes de computadores para reencaminhar
+          frames Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Ratione odio libero suscipit at nam corporis perspiciatis, soluta
+          veniam odit natus in aspernatur numquam quae eum? Libero similique
+          unde tenetur saepe.
+        </dd>
+        <dt>Outro</dt>
+        <dd>
+          Dispositivo utilizado em redes de computadores para reencaminhar
+          frames Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Ratione odio libero suscipit at nam corporis perspiciatis, soluta
+          veniam odit natus in aspernatur numquam quae eum? Libero similique
+          unde tenetur saepe.
+        </dd>
+        <dt>Hub</dt>
+        <dd>
+          Dispositivo utilizado em redes de computadores para reencaminhar
+          frames Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Ratione odio libero suscipit at nam corporis perspiciatis, soluta
+          veniam odit natus in aspernatur numquam quae eum? Libero similique
+          unde tenetur saepe.
+        </dd>
+        <dt>Roteador</dt>
+        <dd>
+          Dispositivo utilizado em redes de computadores para reencaminhar
+          frames Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Ratione odio libero suscipit at nam corporis perspiciatis, soluta
+          veniam odit natus in aspernatur numquam quae eum? Libero similique
+          unde tenetur saepe.
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <ul class="listaNaoOrdenada">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+    </div>
+    <div>
+      <ol class="listaOrdenada">
+        <li>
+          <ul class="listaNaoOrdenada">
+            <li>Lista não ordenada dentro de uma lista ordenada</li>
+            <li>Lista não ordenada dentro de uma lista ordenada</li>
+            <li>Lista não ordenada dentro de uma lista ordenada</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="listaNaoOrdenada">
+            <li>Lista não ordenada dentro de uma lista ordenada</li>
+            <li>Lista não ordenada dentro de uma lista ordenada</li>
+            <li>Lista não ordenada dentro de uma lista ordenada</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+    <table id="tabela1">
+      <caption>
+        Tabela 1 - Livros de 01/2024.
+      </caption>
+      <thead>
+        <tr class="tableHeader">
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Autor</th>
+          <th>Ano</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tableRow">
+          <td>00001</td>
+          <td>Titulo 1</td>
+          <td>Fulano 1</td>
+          <td>1991</td>
+        </tr>
+        <tr class="tableRow">
+          <td>00002</td>
+          <td>Titulo 2</td>
+          <td>Fulano 2</td>
+          <td>1992</td>
+        </tr>
+        <tr class="tableRow">
+          <td>00003</td>
+          <td>Titulo 3 Titulo 3 Titulo 3 Titulo 3 Titulo 3</td>
+          <td>Fulano 3</td>
+          <td>1993</td>
+        </tr>
+        <tr class="tableRow">
+          <td>00004</td>
+          <td>Titulo 4</td>
+          <td>Fulano 4 Fulano 4 Fulano 4 Fulano 4</td>
+          <td>1994</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Fonte: vozes da minha cabeça.</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
