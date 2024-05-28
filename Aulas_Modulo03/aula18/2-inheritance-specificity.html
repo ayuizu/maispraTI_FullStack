@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Herança e especificidade</title>
+    <link rel="stylesheet" href="2-inheritance-style.css" />
+  </head>
+  <body>
+    <p>
+      O acontece quando tem conflito
+      <a
+        href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity"
+        target="_blank"
+        >Mais em documentação Mozilla</a
+      >
+    </p>
+    <div id="div01" class="classeDiv01">
+      <h1 id="textoPrincipal">Texto Principal</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit aperiam
+        commodi quod sunt voluptas molestiae suscipit, id doloribus veritatis
+        sed. Iure quo consequatur illum ea eligendi explicabo dolorum, sunt
+        quam.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit aperiam
+        commodi quod sunt voluptas molestiae suscipit, id doloribus veritatis
+        sed. Iure quo consequatur illum ea eligendi explicabo dolorum, sunt
+        quam.
+      </p>
+    </div>
+    <div>
+      <h1>Prioridades</h1>
+      <p>
+        A espeficicação é calculada na concatenação da contagem de cada tipo de
+        seletor. Não é um peso aplicado na expressão correspondente. No caso de
+        igualdade de especificação, a última declaração encontrada no CSS é
+        aplicada ao elemento. <br /><br />
+        Aumenta especificidade de baixo para cima. <br />Quanto mais específico,
+        maior a prioridade.
+      </p>
+      <ul>
+        <li>Seletores Universais</li>
+        <li>Tipos de Seletores</li>
+        <li>Classes seletoras</li>
+        <li>Atributos seletores</li>
+        <li>Pseudo-classes</li>
+        <li>Seletores ID</li>
+        <li>Seletores inline</li>
+      </ul>
+    </div>
+  </body>
+</html>

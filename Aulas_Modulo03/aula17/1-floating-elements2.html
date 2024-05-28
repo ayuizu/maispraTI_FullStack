@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Floating Elements</title>
+    <style type="text/css">
+      body {
+        background: #f4f4f4;
+      }
+
+      #principal {
+        width: 920px;
+        border: 3px solid red;
+        background-color: green;
+      }
+      #galeria {
+        border: 3px solid red;
+        width: 1600px;
+        background-color: yellow;
+        margin-top: 5px;
+      }
+      .noticia {
+        background-color: #e5e5e5;
+        padding: 5px;
+        width: 280px;
+        margin: 7px;
+        float: left;
+      }
+      .imagem-galeria {
+        background-color: #fff;
+        width: 265px;
+        padding: 5px;
+        margin: 15px;
+        float: left;
+      }
+      .clear {
+        clear: both; /*Sem flutuante dos dois lados*/
+      }
+    </style>
+  </head>
+  <body>
+    <div id="principal">
+      <div class="noticia">
+        <h2>Noticias do mundo</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit saepe
+          odit iusto provident unde, sapiente doloremque mollitia est, similique
+          alias culpa sit dolorum necessitatibus dolores. Laudantium ut neque
+          quaerat? Amet?
+        </p>
+        <a href="#">Veja mais</a>
+      </div>
+      <div class="noticia">
+        <h2>Noticias do mundo</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit saepe
+          odit iusto provident unde, sapiente doloremque mollitia est, similique
+          alias culpa sit dolorum necessitatibus dolores. Laudantium ut neque
+          quaerat? Amet?
+        </p>
+        <a href="#">Veja mais</a>
+      </div>
+      <div class="noticia">
+        <h2>Noticias do mundo</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit saepe
+          odit iusto provident unde, sapiente doloremque mollitia est, similique
+          alias culpa sit dolorum necessitatibus dolores. Laudantium ut neque
+          quaerat? Amet?
+        </p>
+        <a href="#">Veja mais</a>
+      </div>
+      <div class="clear"></div>
+      <!-- Ideal deixar no final
+        1 div principal e 3 divs internas. Clear dentro da principal
+        Se colocasse na div principal = limpa área externa
+        Colocado dentro da div principal pra limpa ra área externa = div principal -->
+    </div>
+    <div id="galeria">
+      <div class="imagem-galeria">
+        <img src="images/image1.png" alt="" />
+      </div>
+      <div class="imagem-galeria">
+        <img src="images/image2.png" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
+          qui iure eius ratione eveniet, maxime, sed dolorem fugiat saepe soluta
+          fugit ex nam sunt delectus voluptates placeat obcaecati, nulla
+          sapiente.
+        </p>
+      </div>
+      <div class="imagem-galeria">
+        <img src="images/image3.png" alt="" />
+        <p>Texto importante</p>
+      </div>
+      <div class="imagem-galeria">
+        <img src="images/image4.png" alt="" />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat vero
+          quidem amet nisi qui? Officiis aperiam ullam suscipit quas, doloremque
+          fuga minima numquam qui quae hic, incidunt inventore alias mollitia?
+        </p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </body>
+</html>

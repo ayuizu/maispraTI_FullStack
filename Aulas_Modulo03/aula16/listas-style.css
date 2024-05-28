@@ -55,7 +55,6 @@ tr {
 }
 tbody tr:hover {
   background-color: rgb(146, 106, 168);
-  cursor: crosshair;
 }
 tfoot tr td {
   border: 0;

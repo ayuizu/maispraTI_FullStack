@@ -1,0 +1,41 @@
+/* Seletor *: seleciona tudo */
+* {
+  border: 0px solid black;
+}
+
+h2 {
+  color: red;
+}
+
+.classe01 {
+  border: 2px solid black;
+}
+
+p.classe01 {
+  background-color: orange;
+}
+
+#conteudo {
+  border: 2px solid green;
+}
+
+/* Seletor filho: seleciona algum elemento dentro de um selector pai */
+
+/* Todos os links filhos diretos de li */
+li > a {
+  text-decoration: none;
+}
+/* Todos os links filhos, netos, bisnetos, etc de div */
+div a {
+  text-decoration: none;
+}
+
+/* Seletor de irmão adjacente: pega elemento p depois de h2 */
+h2 + p {
+  background-color: red;
+}
+
+/* Seletor de irmão geral - pega elemento p depois de h2, não necessariamente adjacente */
+h2-p {
+  background-color: yellow;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Posicionamento</title>
+    <style src="text/css">
+      #container {
+        background-color: #fff;
+        width: 800px;
+        margin: 10px auto;
+        padding: 10px;
+        border: 3px solid black;
+        /* position: absolute; */
+      }
+      .explicacao {
+        font-weight: bolder;
+        color: blueviolet;
+      }
+      h1 {
+        position: static;
+        color: lightcoral;
+        text-align: center;
+      }
+      p {
+        width: 600px;
+      }
+      .static {
+        background-color: #d6ce9e;
+        border: 3px solid yellow;
+      }
+      .relative {
+        background-color: #d89e9e;
+        border: 3px solid red;
+        position: relative;
+        top: 50px;
+        left: 200px;
+      }
+      .absolute {
+        background-color: #a4b3dd;
+        border: 3px solid blue;
+        position: absolute;
+        left: 700px;
+        top: 1000px;
+      }
+      .fixed {
+        background-color: #7daf7d;
+        position: fixed;
+        border: 3px solid green;
+      }
+      .sticky {
+        background-color: pink;
+        position: sticky;
+        border: 3px solid rgb(214, 72, 96);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Posições</h1>
+    <div id="container">
+      <h2>Estático - Amarelo</h2>
+      <div>
+        <p class="explicacao">
+          STATIC: posicionamento comum dos elementos. Todas as tags são por
+          padrão estáticas. Não se mexe usando top, left, etc <br /><br />
+          The element is positioned according to the Normal Flow of the
+          document. The top, right, bottom, left, and z-index properties have no
+          effect. This is the default value.
+        </p>
+        <p class="static">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+          laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+          rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+          voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Dicta laudantium reprehenderit a modi voluptates, ut vero velit earum
+          ea sit rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+          voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Dicta laudantium reprehenderit a modi voluptates, ut vero velit earum
+          ea sit rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+          voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Dicta laudantium reprehenderit a modi voluptates, ut vero velit earum
+          ea sit rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+          voluptas?
+        </p>
+      </div>
+      <h2>Relativo - Vermelho</h2>
+      <p class="explicacao">
+        Pode se movimentar com base em sua posição inicial. No exemplo, está
+        50px do topo e 200px da esquerda. Só que assim cobre o conteúdo de
+        baixo. <br /><br />
+        The element is positioned according to the normal flow of the document,
+        and then offset relative to itself based on the values of top, right,
+        bottom, and left. The offset does not affect the position of any other
+        elements; thus, the space given for the element in the page layout is
+        the same as if position were static. This value creates a new stacking
+        context when the value of z-index is not auto. Its effect on
+        table-*-group, table-row, table-column, table-cell, and table-caption
+        elements is undefined.
+      </p>
+      <p class="relative">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+        voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+        voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+        voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet, voluptas?
+      </p>
+      <h2>Absoluto - Azul</h2>
+      <p class="explicacao">
+        Elemento sai do fluxo normal do documento, mas o deslocamento é
+        calculado em relação ao pai dela. Só funciona caso o pai tenha uma
+        posição diferente do static, se não vai ser baseado no body.
+        <br />Aqui pai = container <br /><br />The element is removed from the
+        normal document flow, and no space is created for the element in the
+        page layout. The element is positioned relative to its closest
+        positioned ancestor (if any) or to the initial containing block. Its
+        final position is determined by the values of top, right, bottom, and
+        left. This value creates a new stacking context when the value of
+        z-index is not auto. The margins of absolutely positioned boxes do not
+        collapse with other margins.
+      </p>
+      <p class="absolute">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+        voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+        voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+        voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet, voluptas?
+      </p>
+      <h2>Fixo - Verde</h2>
+      <p class="explicacao">
+        Elemento sai do fluxo normal do documento e fica fixo na tela. Posição
+        em relação à janela do navegador <br /><br />
+        The element is removed from the normal document flow, and no space is
+        created for the element in the page layout. The element is positioned
+        relative to its initial containing block, which is the viewport in the
+        case of visual media. Its final position is determined by the values of
+        top, right, bottom, and left. This value always creates a new stacking
+        context. In printed documents, the element is placed in the same
+        position on every page.
+      </p>
+      <p class="fixed">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+        voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+        voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+        voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet, voluptas?
+      </p>
+      <h3>Sticky</h3>
+      <p class="explicacao">
+        Fixo na tela <br /><br />
+        The element is positioned according to the normal flow of the document,
+        and then offset relative to its nearest scrolling ancestor and
+        containing block (nearest block-level ancestor), including table-related
+        elements, based on the values of top, right, bottom, and left. The
+        offset does not affect the position of any other elements. This value
+        always creates a new stacking context. Note that a sticky element
+        "sticks" to its nearest ancestor that has a "scrolling mechanism"
+        (created when overflow is hidden, scroll, auto, or overlay), even if
+        that ancestor isn't the nearest actually scrolling ancestor.
+      </p>
+      <p class="sticky">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+        voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+        voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet,
+        voluptas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        laudantium reprehenderit a modi voluptates, ut vero velit earum ea sit
+        rem nam nostrum corrupti quia aliquid asperiores quod! Amet, voluptas?
+      </p>
+    </div>
+    <p>Font: https://developer.mozilla.org/en-US/docs/Web/CSS/position</p>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+nav#menuHorizontal {
+  position: fixed;
+  display: block flex;
+  width: 100%;
+  height: 55px;
+  top: 0px;
+  left: 0px;
+  background-color: goldenrod;
+  border: 1px solid;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav#menuHorizontal ul {
+  list-style-type: none;
+}
+
+nav#menuHorizontal li {
+  display: inline-block;
+  padding: 5px;
+  width: max-content;
+  font-weight: bold;
+  background-color: rgb(245, 208, 116);
+}
+
+nav#menuHorizontal a {
+  text-decoration: none;
+}
+nav#menuHorizontal a:hover {
+  color: rgb(98, 48, 216);
+}
+
+#menuHorizontal p {
+  font-weight: bolder;
+  color: rgb(98, 48, 216);
+  padding: 0 0 0 10px;
+}
+
+#conteudo {
+  position: absolute;
+  top: 60px;
+}

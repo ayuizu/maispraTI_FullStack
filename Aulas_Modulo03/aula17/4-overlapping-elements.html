@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Overlapping Elements</title>
+    <style src="text/css">
+      .conteudo1 {
+        border: 3px solid black;
+        background-color: brown;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        z-index: 1;
+      }
+      .conteudo2 {
+        border: 3px solid black;
+        background-color: #0896cc;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        z-index: 2;
+      }
+      .explicacao {
+        margin-top: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conteudo1">content 1</div>
+    <div class="conteudo2">content 2</div>
+    <p>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      Z-index qual conteudo vai ser mostrado primeiro
+    </p>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Elementos inline, block e inline-block</title>
+    <style type="text/css">
+      .bordaBlock {
+        border: 3px solid red;
+        display: block;
+      }
+      .bordaInline {
+        border: 3px solid blue;
+        display: inline;
+      }
+      .bordaInlineBlock {
+        border: 3px solid green;
+        display: inline-block;
+      }
+      .explicacao {
+        font-weight: bolder;
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>inline-block</h2>
+    <span class="bordaInlineBlock explicacao">
+      inline-block: largura varia conforme conteudo, mas itens vão pra linha de
+      baixo se não couberem na tela
+    </span>
+    <span class="bordaInlineBlock"> inline-block Lorem ipsum dolor. </span>
+    <span class="bordaInlineBlock"> inline-block Lorem ipsum dolor. </span>
+    <span class="bordaInlineBlock">
+      inline-block Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Suscipit dolore est maxime cum, quo magni esse molestias iste iure maiores
+      mollitia eum, dolores fuga in, pariatur nam similique. Totam, vero.</span
+    >
+    <span class="bordaInlineBlock">
+      inline-block Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Illum impedit est suscipit porro animi obcaecati quam eaque repellendus.
+      Expedita nihil doloremque, possimus eum dignissimos ea quo quos sequi
+      maiores cum?
+    </span>
+
+    <h2>inline</h2>
+    <span class="bordaInline explicacao">
+      inline: Ocupa espaço só espaço do conteúdo; quebra elemento ao quebrar
+      linha
+    </span>
+    <span class="bordaInline">
+      inline Ocupa espaço só espaço do conteúdo;
+    </span>
+    <span class="bordaInline">
+      inline Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+      inline Ocupa espaço só espaço do conteúdo; quebra elemento ao quebrar
+      linha
+    </span>
+    <span class="bordaInline">
+      inline Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+      inline Ocupa espaço só espaço do conteúdo; quebra elemento ao quebrar
+      linha
+    </span>
+    <h2>block</h2>
+    <p class="bordaBlock explicacao">
+      block: Largura ocupa todo espaçamento da tela e fica um abaixo do outro
+      ex: h1, p, table
+    </p>
+    <p class="bordaBlock">
+      block: Largura ocupa todo espaçamento da tela e fica um abaixo do outro
+      ex: h1, p, table Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Corporis quos veniam repellendus ducimus. Quod pariatur dolor temporibus,
+      officiis, atque velit ad cum suscipit itaque, voluptate distinctio quidem
+      eaque magni adipisci!
+    </p>
+    <p class="bordaBlock">
+      block: Largura ocupa todo espaçamento da tela e fica um abaixo do outro
+      ex: h1, p, table
+    </p>
+  </body>
+</html>

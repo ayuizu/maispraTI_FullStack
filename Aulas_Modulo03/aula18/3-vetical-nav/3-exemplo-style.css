@@ -1,0 +1,34 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul a {
+  width: 200px;
+  height: 40px;
+  color: #000;
+  display: block;
+  text-decoration: none;
+  line-height: 40px;
+  text-indent: 40px;
+  background-color: blanchedalmond; /*Fundo mesmo com imagem caso a imagem quebre*/
+  background: #f7b600 url(imag-vertical/menu.png) no-repeat left bottom;
+}
+
+a:hover {
+  background-color: #f7b50096;
+  background-position: right bottom;
+  color: #fff;
+}
+
+/* Marcar onde estou no meu */
+
+#home ul#navegacao a.home,
+#about ul#navegacao a.about {
+  background-position: right bottom;
+  background-color: #f7b50096;
+  color: #fff;
+}
+
+/* Funciona pra home, mas n funciona pra about. Pq? */

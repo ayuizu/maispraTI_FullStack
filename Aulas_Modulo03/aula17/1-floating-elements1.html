@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Floating Elements</title>
+    <style type="text/css">
+      .content {
+        background-color: rgb(104, 196, 104);
+        border: 1px solid red;
+        width: 200px;
+        height: 150px;
+        float: right;
+      }
+      .content1 {
+        background-color: yellowgreen;
+        border: 1px solid red;
+        width: 150px;
+        height: 150px;
+        float:left;
+      }
+      .clear {
+        /* Parágrafo tava flutuante tbm. Essa formatação tira ela da flutuação */
+        /* Não pode ter elementos flutuantes à direita */
+        clear: right;
+      }
+    </style>
+  </head>
+  <body>
+   
+    </div>
+    <div class="content1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </div>
+
+    <div class="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quisquam
+    </div>
+
+    <div class="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quisquam
+    </div>
+    <p class="clear">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi labore
+      dolores vitae animi quidem? Odit quae, consequatur at voluptatem dolorem
+      neque veritatis quibusdam perferendis dolores debitis assumenda dolor eum
+      deserunt.
+    </p>
+  </body>
+</html>

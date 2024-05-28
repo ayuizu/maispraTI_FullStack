@@ -1,0 +1,35 @@
+/* Recomendando definir uma font-family padrão tbm caso dê algum erro na referencia */
+@font-face {
+  font-family: "Road Rage";
+  src: url(fonts/RoadRage.woff);
+}
+@font-face {
+  font-family: "Ancient";
+  src: url(fonts/Ancient-Medium.woff);
+}
+@font-face {
+  font-family: "Madelina";
+  src: url(fonts/MadelinaScript.woff);
+}
+@font-face {
+  font-family: "Bring";
+  src: url(fonts/BringHeart.woff);
+}
+h1 {
+  font-size: 6em;
+  font-family: "Road Rage";
+}
+
+h2 {
+  font-size: 6em;
+  font-family: "Ancient";
+}
+
+h3 {
+  font-size: 6em;
+  font-family: "Madelina";
+}
+h4 {
+  font-size: 6em;
+  font-family: "Bring";
+}

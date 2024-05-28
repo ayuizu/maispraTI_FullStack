@@ -1,0 +1,36 @@
+div {
+  border: 2px solid;
+}
+
+/* Seletores iguais: sempre vai valer o último,
+exceto se colocar !important, mas não é uma boa prática
+
+Se tiver um style="color:yellow" no p, fica amarelo em vez de azul
+Também não é uma boa prática*/
+#div01 p {
+  color: red !important;
+}
+
+#div01 p {
+  color: blue;
+}
+
+/*! Prioridades: ID > Classe > Tag > Global */
+
+/* Selector specificity(1,0,0) */
+#textoPrincipal {
+  color: green;
+}
+/* Selector specificity(1,0,1) */
+h1#textoPrincipal {
+  color: rgb(163, 62, 79);
+  font-size: 30px;
+}
+/* Selector specificity(0,1,1) */
+classDiv01.h1 {
+  color: yellow;
+}
+h1 {
+  color: gray;
+  font-size: 40px;
+}
