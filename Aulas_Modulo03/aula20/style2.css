@@ -1,0 +1,41 @@
+.botao {
+  width: 40px;
+  height: 25px;
+}
+
+.botaoTotal {
+  width: 40px;
+  height: 56px;
+}
+
+.botaoZero {
+  width: 86px;
+  height: 25px;
+}
+
+button {
+  border-radius: 3px;
+  align-content: center;
+}
+
+.resultado {
+  height: 40px;
+  width: 176px;
+  border-radius: 6px;
+}
+
+form {
+  margin: 10px 0 0 10px;
+  width: 202px;
+  background: rgb(152, 170, 180);
+  border-radius: 6px;
+}
+
+table tr {
+  margin: 3px 3px;
+}
+table {
+  padding: 7px;
+  align-content: center;
+  align-items: center;
+}

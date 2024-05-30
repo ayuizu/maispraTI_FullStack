@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inserindo JS</title>
+
+    <script>
+      //Numero é par?
+      //   let numero = prompt("Digite um número: ");
+      //   if (numero % 2 == 0) {
+      //     document.write("<h1>Olá! O número digitado é par.</h1>");
+      //   }
+
+      //   //   Capturar nome e idade e calcular a média
+      //   let somaIdade = 0;
+      //   let contador = 0;
+      //   for (let i = 0; i < 4; i++) {
+      //     let nome = prompt("Digite um nome: ");
+      //     let idade = parseInt(prompt("Digite uma idade: "));
+      //     document.write(nome + ", " + idade + " | ");
+      //     somaIdade += idade;
+      //     contador += 1;
+      //   }
+      //   let media = somaIdade / contador;
+      //   document.write("<h1>A média das idades é " + media.toFixed(2) + "</h1>");
+
+      //! Eventos com mouse
+      function evento1() {
+        document.write("<h3>Evento aconteceu! Clique!</h3>");
+        // Usar  onclick="evento1()"
+      }
+      function evento2() {
+        document.write("<h3>Duplo Clique!</h3>");
+        // Usar onDblclick="evento2()"
+      }
+
+      function evento3() {
+        document.write("Onmouseup!");
+        //onmouseup="evento3()"
+      }
+
+      function evento4() {
+        document.write("OnmouseOver!");
+        //onmouseover="evento4()" - Quando mouse passa em cima
+      }
+
+      function evento5() {
+        document.write("OnmouseOut!");
+        //Usar onmouseout="evento5()" - quando mouse sai de cima
+      }
+
+      //Eventos com teclado
+
+      function eventoTeclado() {
+        document.write("Evento aconteceu!");
+      }
+
+      // Evento pagina
+
+      function eventoJanela() {
+        document.write("Evento aconteceu!");
+      }
+    </script>
+  </head>
+  <body>
+    <!--onscroll="eventoJanela()"-->
+    <!-- <input type="text" placeholder="Teste" id="nome" disabled="disabled" /> -->
+    <!-- Disabled: usuário não consegue alterar -->
+    <!-- Chamar JS ao final do body (ver notes) -->
+
+    <!--? Eventos mouse -->
+    <div
+      style="
+        background-color: burlywood;
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+      "
+      onclick="evento1()"
+      ;
+    ></div>
+    <div
+      style="
+        background-color: burlywood;
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+      "
+      onDblclick="evento2()"
+      ;
+    ></div>
+    <div
+      style="
+        background-color: burlywood;
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+      "
+      onmouseup="evento3()"
+      ;
+    ></div>
+    <div
+      style="
+        background-color: burlywood;
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+      "
+      onmouseover="evento4()"
+      ;
+    ></div>
+    <div
+      style="
+        background-color: burlywood;
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+      "
+      onmouseout="evento5()"
+      ;
+    ></div>
+
+    <!-- ? Eventos teclado -->
+    <input onkeydown="eventoTeclado()" type="text" />
+    <!--quando pressiona o teclado (caractere)-->
+    <input onkeyup="eventoTeclado()" type="text" />
+    <!--quando solta o teclado (caractere)-->
+    <input onkeypress="eventoTeclado()" type="text" />
+    <!-- quando fica com tecla pressionada -->
+
+    <select onfocus="eventoJanela()">
+      <!--Ao selecionar-->
+      <option value="10">Laranja</option>
+      <option value="5">Morango</option>
+    </select>
+    <select onchange="eventoJanela()">
+      <!--Ao escolher-->
+      <option value="10">Laranja</option>
+      <option value="5">Morango</option>
+    </select>
+    <select onblur="eventoJanela()">
+      <!--Ao escolher e sair-->
+      <option value="10">Laranja</option>
+      <option value="5">Morango</option>
+    </select>
+  </body>
+</html>

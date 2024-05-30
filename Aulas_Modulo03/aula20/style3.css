@@ -1,0 +1,58 @@
+.botao,
+.botaoFuncao,
+.botaoOperacao,
+.botaoIgual {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.botao {
+  background-color: rgb(243, 239, 235);
+  border: rgb(243, 239, 235);
+}
+.botaoFuncao {
+  background-color: rgb(228, 205, 175);
+  border: rgb(228, 205, 175);
+}
+.botaoOperacao,
+.botaoIgual {
+  border: orange;
+  background-color: orange;
+}
+
+.botaoIgual {
+  width: 86px;
+  border-radius: 40px;
+}
+
+button {
+  border-radius: 3px;
+  align-content: center;
+}
+
+.resultado {
+  height: 90px;
+  width: 176px;
+  background: black;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  text-align: end;
+}
+
+form {
+  margin: 10px 0 0 10px;
+  width: 202px;
+  background: black;
+  border-radius: 6px;
+}
+
+table tr {
+  margin: 3px 3px;
+}
+table {
+  padding: 7px;
+  align-content: center;
+  align-items: center;
+}
