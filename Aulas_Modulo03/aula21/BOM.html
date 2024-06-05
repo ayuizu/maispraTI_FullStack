@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Browser Object Model</title>
+    <script>
+      //open(url, target, windowFeatures);
+      //   let janela;
+      //   function popUp() {
+      //     janela = window.open("", "myWindow", "width=200, height=200");
+      //   }
+      //   //close()
+      //   function closePopUp() {
+      //     janela.close();
+      //   }
+      //   //print()
+      //   function print() {
+      //     janela.print();
+      //   }
+
+      let myWindow;
+      function popUp() {
+        myWindow = window.open("", "myWindow", "width=400, height=200");
+      }
+      function closePopUp() {
+        myWindow.close();
+      }
+
+      let height = window.screen.availHeight;
+      let width = window.screen.availWidth;
+
+      document.write("Altura do navegador: " + height + "</br>");
+      document.write("Largura do navegador: " + width + "</br>");
+
+      //   window.setTimeout(() => {
+      //     document.write("Oi</br>");
+
+      //   }, 1000);
+      let i = 10;
+      let x = window.setInterval(() => {
+        document.write(i + "</br>");
+        i--;
+        if (i == 0) {
+          clearInterval(x);
+        }
+      }, 500);
+      //clearTimeout
+    </script>
+  </head>
+  <body>
+    <br /><br /><br />
+
+    <button onclick="popUp()">Abrir uma janela</button>
+    <button onclick="closePopUp()">Fechar uma janela</button>
+    <button onclick="print()">Imprimir a página</button>
+
+    <br /><br /><br />
+
+    <button onclick="window.location.href='http://www.google.com'">
+      Acessar
+    </button>
+
+    <br /><br /><br />
+  </body>
+</html>

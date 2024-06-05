@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desestructuring</title>
+    <script>
+      let filmes = [
+        "Poderoso Chefão",
+        "Senhor dos Anéis",
+        "Harry Potter",
+        "Platoon",
+        "Pulp Fiction",
+      ];
+      console.log(filmes);
+      let var1 = filmes[0];
+      let var2 = filmes[1];
+      let var3 = filmes[2];
+      console.log(var1, var2, var3); //Poderoso Chefão Senhor dos Anéis Harry Potter
+      //desestructuring - em vez de fazer as 5 linhas acima, usar as 2 abaixo
+      let [a, b, , c, , , , d = "[faltou]"] = filmes;
+      //Se tivesse algum erro, atribuiria Poderoso Chefao
+      console.log(a, b, c, d); //Poderoso Chefão Senhor dos Anéis Platoon [faltou]
+      console.log("-------------------------------------------");
+      //   indice 0 = a, indice 1 = b, indice 2 = x, indice 3 = c
+      //---------------------------------------------------------------------------------
+      let coisas = [
+        ["Abacaxi", "Maça", "Hortelã"],
+        ["Computador", "Mouse", "Cadeira"],
+      ];
+
+      let [, [, x]] = coisas;
+      //segundo elemento do segundo array = mouse
+
+      console.log(coisas);
+      console.log(x); //Mouse
+      console.log("-------------------------------------------");
+      //---------------------------------------------------------------------------------
+      let produto = {
+        nome: "Bicicleta",
+        preco: 1000,
+        detalhes: {
+          fabricante: "caloi",
+          modelo: 10,
+        },
+      };
+
+      let { nome, preco } = produto;
+      console.log(nome, preco); //Bicicleta 1000
+
+      let { preco: p, nome: n } = produto;
+      console.log(n, p); //Bicicleta 1000
+
+      let { nome: nn, preco: pp, desconto = 5 } = produto;
+      console.log(nn, pp, desconto); //Bicicleta 1000 5
+
+      let {
+        detalhes: { fabricante, modelo },
+      } = produto;
+      console.log(fabricante, modelo); //caloi 10
+
+      //---------------------------------------------------------------------------------
+
+      let arr = [10, 20, 30, 40, 50];
+
+      function teste([a, b, , c, d]) {
+        console.log(a, b, c, d); //10 20 40 50
+      }
+
+      teste(arr);
+
+      let obj = {
+        a: 10,
+        b: 20,
+        c: 30,
+        d: 40,
+        e: 50,
+      };
+
+      function teste1({ a, b, c, d, e }) {
+        console.log(e); //50
+      }
+
+      teste1(obj);
+
+      let arr2 = [100, 200, 300, 400, 500];
+      let [j, k, ...resto] = arr2;
+      console.log(...resto); //300 400 500
+    </script>
+  </head>
+  <body></body>
+</html>

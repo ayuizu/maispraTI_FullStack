@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript aplicado CSS</title>
+    <script>
+      function trocarEstilizacao(color) {
+        document.getElementById("botoes").style.backgroundColor = color;
+      }
+      function trocarClasse(classe) {
+        document.getElementById("quadrado").className = classe;
+      }
+    </script>
+    <style>
+      .antigaClasse {
+        background-color: orangered;
+        width: 400px;
+        height: 400px;
+        font-size: 4rem;
+      }
+      .novaClasse {
+        background-color: blueviolet;
+        width: 500px;
+        height: 500px;
+        text-align: center;
+        font-size: 6rem;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button type="button" onclick="trocarEstilizacao('orange')">
+        Laranja
+      </button>
+      <button type="button" onclick="trocarEstilizacao('red')">Vermelho</button>
+      <button type="button" onclick="trocarEstilizacao('yellow')">
+        Amarelo
+      </button>
+      <button type="button" onclick="trocarEstilizacao('pink')">Rosa</button>
+    </div>
+    <div
+      id="botoes"
+      style="
+        width: 200px;
+        height: 200px;
+        border: 1px black solid;
+        background-color: gray;
+      "
+    ></div>
+    <div>
+      <button
+        type="button"
+        onclick="trocarClasse('novaClasse')"
+        ondblclick="trocarClasse('antigaClasse')"
+      >
+        Trocar Classe
+      </button>
+    </div>
+    <div id="quadrado" class="antigaClasse">Teste</div>
+  </body>
+</html>

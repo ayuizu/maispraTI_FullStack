@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tratamento de erros</title>
+    <script>
+      let video = Array();
+
+      video[1] = Array();
+      video[1]["Nome"] = "Fullmetal Alchemist";
+      video[1]["Categoria"] = "Anime";
+
+      console.log(video);
+
+      function getVideo(video) {
+        try {
+          // Tentar - atua num bloco de cod; tudo que é passivel de erro fica aqui
+          console.log(video[0]["Nome"]);
+          console.log("A aplicação não morreu");
+        } catch (error) {
+          // Pegar(error) - se bloco acima retornar erro, cai aqui
+          tratarErro(error);
+          console.log("Houve um problema externo.");
+
+          throw new Error(
+            "Houve um erro, mas já estamos trabalhando na solução"
+          );
+        } finally {
+          // Após try-catch sempre passa por aqui
+          console.log("Sempre passa por aqui");
+        }
+      }
+
+      function tratarErro(erro) {
+        console.log("O erro é: " + erro);
+      }
+
+      getVideo(video);
+    </script>
+  </head>
+  <body></body>
+</html>
