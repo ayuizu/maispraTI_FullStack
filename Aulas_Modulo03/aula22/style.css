@@ -1,0 +1,128 @@
+/* CSS HEX 
+--hunyadi-yellow: #f6bd60ff;
+--linen: #f7ede2ff;
+--tea-rose-red: #f5cac3ff;
+--cambridge-blue: #84a59dff;
+--light-coral: #f28482ff;
+Source: https://coolors.co/palettes
+*/
+
+/* Elementos comuns às duas páginas */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body {
+  background-color: #f7ede2ff;
+}
+
+#cabecalho {
+  display: flex;
+  background-color: #f5cac3ff;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: #f28482ff;
+}
+nav ul li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  float: left;
+  margin: 1rem;
+}
+
+.thisPage {
+  font-weight: bolder;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #84a59dff;
+}
+nav ul li a:hover {
+  text-decoration: underline #84a59dff;
+}
+#register,
+#consulta {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+h2 {
+  text-align: center;
+  color: #84a59dff;
+}
+
+/* Elementos da página CADASTRO */
+
+select,
+input {
+  background-color: whitesmoke;
+  font-size: 1rem;
+  padding: 2px;
+  border-radius: 3px;
+  border: #f28482ff solid 0.5px;
+  width: 100%;
+}
+
+button {
+  background-color: #84a59dff;
+  font-size: 1rem;
+  padding: 3px;
+  border: 0.5px #84a59dff solid;
+  border-radius: 3px;
+  float: right;
+  width: 80px;
+}
+button:hover {
+  background-color: #f6bd60ff;
+}
+
+form {
+  padding: 20px;
+  line-height: 3em;
+  border: 1px solid #84a59dff;
+  width: 700px;
+  height: 200px;
+}
+
+form h1 {
+  align-content: center;
+}
+table tr td {
+  padding: 2px;
+}
+
+/* Elementos da página CONSULTA */
+
+#consulta {
+  border: 0.5px #84a59dff solid;
+  width: 700px;
+  height: auto;
+  line-height: 2;
+  padding: 20px;
+}
+
+#consulta table {
+  position: relative;
+  left: 10px;
+  text-align: center;
+}
+#consulta table tbody tr td {
+  background-color: #fff;
+  margin: 0;
+  width: 165px;
+}
+
+#consulta table thead tr td {
+  margin: 0;
+  background-color: #f6bd60ff;
+}
