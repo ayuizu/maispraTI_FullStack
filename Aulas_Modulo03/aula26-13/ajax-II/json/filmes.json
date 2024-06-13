@@ -1,0 +1,44 @@
+{
+    "filmes":[
+        {
+            "titulo": "Tropa de Elite",
+            "resumo": "Nascimento, capitão da Tropa de Elite do Rio de Janeiro, é designado para chefiar uma das equipes que tem como missão apaziguar o Morro do Turano. Ele precisa cumprir as ordens enquanto procura por um substituto para ficar em seu lugar. Em meio a um tiroteio, Nascimento e sua equipe resgatam Neto e …",
+            "generos": [
+                {"genero": "Policial"},
+                {"genero": "Ação"},
+                {"genero": "Investigação"}
+            ],
+            "elenco":[
+                {"ator": "Wagner Moura"}
+            ]
+        },
+        {
+            "titulo": "Interestelar",
+            "resumo": "As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos…",
+            "generos": [
+                {"genero": "Drama"},
+                {"genero": "Ação"},
+                {"genero": "Sci-Fi"}
+            ],
+            "elenco":[
+                {"ator": "Matt Damon"},
+                {"ator": "Anne Hathaway"},
+                {"ator": "Matthew McConaughey"}
+            ]
+        },
+        {
+            "titulo": "Viagem de Chihiro",
+            "resumo": "Chihiro e seus pais estão se mudando para uma cidade diferente. A caminho da nova casa, o pai decide pegar um atalho. Eles se deparam com uma mesa repleta de comida, embora ninguém esteja por perto. Chihiro sente o perigo, mas seus pais começam a comer. Quando anoitece, eles se transformam em porcos. Agora, apenas Chihiro pode salvá-los.",
+            "generos": [
+                {"genero": "Drama"},
+                {"genero": "Fantasia"},
+                {"genero": "Animação"}
+            ],
+            "elenco":[
+                {"ator": "Chihiro"},
+                {"ator": "Haku"}
+            ]
+        }
+            ]
+        }
+    

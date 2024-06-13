@@ -1,0 +1,58 @@
+#content {
+    background-color: gray;
+    height: 400px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-wrap:wrap;
+    /* justify-content: space-evenly; eixo principal */
+    /* align-items: center; eixo x */
+    /* align-content: space-between; */
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: cadetblue;
+    border: 3px solid blue;
+    flex-grow: 2;
+}
+
+.item1 {
+    flex-shrink: 1;
+}
+
+
+.item2 {
+    flex-shrink: 2;
+    flex-basis: 300px;
+    flex-grow: 3;
+
+}
+
+/* Display: flex - organiza */
+/*
+Flex-direction: This establishes the main-axis, thus defining the direction flex items are placed in the flex container 
+- row (default): left to right in ltr; right to left in rtl
+- row-reverse: right to left in ltr; left to right in rtl
+- column: same as row but top to bottom
+- column-reverse: same as row-reverse but bottom to top
+*/
+
+/*
+Flex-wrap: By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
+- nowrap (default): all flex items will be on one line
+- wrap: flex items will wrap onto multiple lines, from top to bottom.
+- wrap-reverse: flex items will wrap onto multiple lines from bottom to top.
+ */
+
+ /*
+ flex-grow
+ This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
+ 
+ If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, that child would take up twice as much of the space as either one of the others (or it will try, at least).
+ */
+
+ /*
+ flex-shrink
+This defines the ability for a flex item to shrink if necessary.*/

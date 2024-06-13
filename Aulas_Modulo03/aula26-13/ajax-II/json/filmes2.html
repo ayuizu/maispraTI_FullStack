@@ -1,0 +1,87 @@
+<!-- Se ao fazer uma requisição. receber um XML, o que fazer -->
+<!-- JS não lida bem com XML -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Filmes em JSCON</title>
+    <script src="xmlToJson.js"></script>
+    
+    <script>
+        function getMovies() {
+            const xmlHttp = new XMLHttpRequest()
+            //objeto capaz de trabalhar com nossos filmes, dá uma API para consultar
+
+            xmlHttp.open('GET','filmes.json');
+            //configura qual URL vai ser requisitado, e qual metodo (GET)
+
+            //Para consultar status requisição - dispara quando status for modificado
+            xmlHttp.onreadystatechange = () => {
+                if(xmlHttp.readyState === 4 && xmlHttp.status === 200){
+                    const JSONMovies = xmlHttp.responseText
+
+                    const objJSONMovies = JSON.parse(JSONMovies);
+
+                    for(let i in objJSONMovies.filmes){
+                        let item = objJSONMovies.filmes[i]
+
+                        let divRow = document.createElement('div')
+                        divRow.className='row'
+                        let divCol = document.createElement('div')
+                        divCol.className='col'
+
+                        // Problema: tem mais de 1 genero e mais de 1 ator
+                        let p1 = document.createElement('p')
+                        p1.innerHTML='<strong>Titulo: </strong>' + item.titulo 
+
+                        let p2 = document.createElement('p')
+                        p2.innerHTML='<strong>Resumo: </strong>' + item.resumo
+
+                        let p3 = document.createElement('p')
+                        p3.innerHTML='<strong>Genero: </strong>' + item.genero
+
+                        let p4 = document.createElement('p')
+                        p4.innerHTML='<strong>Elenco: </strong>' + item.resumo.ator
+
+                        //appendChild adiciona um nó, esse elemento dentro da lista
+                        divRow.appendChild(divCol) //add coluna na linha
+                        divCol.appendChild(p1) //add p1 na coluna
+                        divCol.appendChild(p2)
+                        divCol.appendChild(p3)
+                        divCol.appendChild(p4)
+                        //divCol.appendChild(p2) //add p2 na coluna
+
+                        document.getElementById('list').appendChild(divRow)
+                    }
+                    
+                    //console.log(JSONMovies);
+                }
+                // if(xmlHttp.readyState===4 && xmlHttp.status===404){
+                //     console.log("Ferrou, chama o dev");
+                // }
+            }
+            xmlHttp.send();
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light mb-5">
+        <div class="container">
+            <h1>Catalogo de Filmes JSON</h1>
+        </div>
+    </nav>
+
+    <div class="contaner" id="list">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary" onclick="getMovies()">Listar Filmes</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+</body>
+</html>

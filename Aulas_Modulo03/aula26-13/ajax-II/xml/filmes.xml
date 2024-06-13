@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filmes>
+    <filme id="1">
+        <titulo>Kill Bill</titulo>
+        <resumo>
+            A ex-assassina conhecida apenas como Noiva acorda de um coma de quatro anos decidida a se vingar de Bill, seu ex-amante e chefe, que tentou matá-la no dia do casamento. Ela está motivada a acertar as contas com cada uma das pessoas envolvidas com a perda da filha, da festa de casamento e dos quatro anos de sua vida. Na jornada, a Noiva é submetida a dores físicas ago
+        </resumo>
+        <genero>Ação</genero>
+        <genero>Aventura</genero>
+        <elenco>
+            <ator>Wagner Moura</ator>
+            <ator>Rodrigo Santoro</ator>
+            <ator>Lazaro Ramos</ator>
+        </elenco>
+    </filme>
+    <filme id="2">
+        <titulo>A Viagem de Chihiro</titulo>
+        <resumo>
+            Chihiro e seus pais estão se mudando para uma cidade diferente. A caminho da nova casa, o pai decide pegar um atalho. Eles se deparam com uma mesa repleta de comida, embora ninguém esteja por perto. Chihiro sente o perigo, mas seus pais começam a comer. Quando anoitece, eles se transformam em porcos. Agora, apenas Chihiro pode salvá-los.
+        </resumo>
+        <genero>Ação</genero>
+        <genero>Aventura</genero>
+        <elenco>
+            <ator>Anne Hathaway</ator>
+            <ator>Emma Watson</ator>
+            <ator>Tom Cruise</ator>
+        </elenco>
+    </filme>
+
+    <filme id="3">
+        <titulo>Vingadores</titulo>
+        <resumo>
+            Homem de Ferro, Capitão América, Thor, Hulk e os Vingadores se unem para combater o maligno Thanos. Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a humanidade.
+        </resumo>
+        <genero>Ação</genero>
+        <genero>Aventura</genero>
+        <elenco>
+            <ator>Zendeya</ator>
+        </elenco>
+
+    </filme>
+</filmes>

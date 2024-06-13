@@ -1,0 +1,59 @@
+#box1 {
+    width: 200px;
+    height: 200px;
+    background: #b9c941;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 50px;
+    /* box-sizing: border-box; */
+}
+
+
+#box2 {
+    width: 200px;
+    height: 200px;
+    background: #b9c941;
+    padding: 10px;
+    margin: 10px;
+    border-radius:50px 10px;
+    box-sizing: border-box;
+    /* allows us to include the padding and border in an element's total width and height. */
+}
+
+
+
+#box3 {
+    width: 200px;
+    height: 200px;
+    background: #b9c941;
+    margin: 10px;
+    padding:30px;
+    border-radius: 50px 50px;
+    box-sizing:border-box;
+    text-align: center;
+}
+
+
+
+#box4 {
+    width: 200px;
+    height: 200px;
+    background: #b9c941;
+    margin: 10px;
+    border-radius: 10px 50px;
+    box-sizing: border-box;
+}
+
+
+.border1 {
+    border-radius: 150px 50px;
+}
+.border2 {
+    border-radius: 100px 100px;
+}
+.border3 {
+    border-radius: 50px 150px;
+}
+.border4 {
+    border-radius: 10px 10px;
+}
