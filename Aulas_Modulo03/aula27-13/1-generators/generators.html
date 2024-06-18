@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+     /*fetch('https://api.exemplo.com/dados')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Erro ao buscar dados:', error));*/
+
+        function* chat(){
+            let opcao = yield 'Olá, tudo bem?';
+
+            if (opcao==='sim' || opcao==='Sim' || opcao==='S' || opcao==='s' || opcao==='SIM' ){
+                yield 'Ótimo';
+
+                opcao = yield 'Como eu posso te ajudar? Quer uma piada?'
+                if (opcao==='sim' || opcao==='Sim' || opcao==='S' || opcao==='s' || opcao==='SIM' ){
+                    //Jeitos de fazer requisição sem ser por Ajax
+                    let piada;
+                    fetch('./piadas.json').then(resposta => resposta.json()).then(piadas => {let piada = piadas[Math.floor(Math.random()*11+1)]
+                        console.log(piada.piada)});
+
+                    // Não tá achando resposta
+                    setTimeout(()=>{
+                        console.log(piada.resposta);
+                        console.log("Muito boa a piada! Ri muito mesmo, acredite.");
+                    },2000) 
+                }
+            }
+        }
+        let chat1 = chat();
+
+        function iniciarChat(){
+            let resposta =  document.getElementById('resposta').value;
+            let iteracao = chat1.next(resposta);
+            console.log(iteracao);
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="iniciarChat()">Avançar</button>
+    Resposta: <input type="text" id="resposta">
+</body>
+</html>

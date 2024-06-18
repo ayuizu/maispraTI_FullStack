@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import</title>
+    <script type="module">
+        import { getEnderecoByCEP } from './lib.mjs'
+
+        getEnderecoByCEP('90035190').then(dados => console.log(dados))
+        getEnderecoByCEP('91540000').then(dados => console.log(dados))
+        getEnderecoByCEP('90050170').then(dados => console.log(dados))
+        getEnderecoByCEP('90690200').then(dados => console.log(dados))
+        // Usando .js: Uncaught SyntaxError Cannot use import statement outside a module => mudar para lib.mjs
+
+    </script>
+    <!-- Tentando importar .js -- não de certo-->
+    <!-- <script>
+        const teste = require('./lib.mjs')
+        teste.getEnderecoByCEP("90010321").then(dados => console.log(dados));
+
+        // Uncaught SyntaxError: Cannot use import statement outside a module => mudar para lib.mjs
+    </script> -->
+</head>
+<body>
+
+</body>
+</html>
