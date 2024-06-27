@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Projeto</title>
+  <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <script src=".assets/js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+        <div>
+            <a href="#" class="logo">
+                <h1>
+                <span>Tokyo Veggie Guide</span>
+                <span class="emoji"> &#128508;</span>
+                </h1>
+            </a>
+        </div>
+        <div>
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Restaurantes</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Cafeterias</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Bares</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Cadastro</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Contato</a></li>
+            </ul>
+        </div>
+      <div class="theme-switch">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+            <ion-icon name="partly-sunny-outline" class="sun"> </ion-icon>
+            <ion-icon name="moon-outline" class="moon"> </ion-icon>
+             <div class="switcher"></div>
+        </label>
+      </div>
+    </nav>
+  </header>
+
+<main> 
+    <section class="firstSection">
+        <div class="intro-text">
+            <h1>Indique aqui o <span>titulo</span> da seção</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam porro non accusamus, est tempora rem perferendis quasi iste sapiente ipsa, sequi a facilis ipsum earum nobis illum pariatur. Ad, blanditiis!</p>
+            <a type="button" class="btn red" href="">Inscreva-se</a>
+            <a type="button" class="btn blue"href="">Saiba mais</a>
+        </div>
+
+        <div class="iframe">
+            <iframe src="https://www.youtube.com/embed/Et7O5-CzJZg?si=SJhB8B-rKJXtRkXS" frameborder="0" width="560" height="315" title="Youtube Video"></iframe>
+            <div class="stand-1"></div>
+            <div class="stand-2"></div>
+            <div></div>
+        </div>
+        
+    </section>
+    
+    <section class="galeria">
+        <div class="fotos">
+            <ul>
+                <li><img src="assets/images/op1.jpeg"></li>
+                <li><img src="assets/images/op2.jpeg"></li>
+                <li><img src="assets/images/op3.jpeg"></li>
+                <li><img src="assets/images/op4.jpeg"></li>
+                <li><img src="assets/images/op5.jpeg"></li>
+                <li><img src="assets/images/op1.jpeg"></li>
+            </ul>
+         </div>
+    </section>
+
+    <section class="anotherSection">
+        <!-- Código do Pedro + Vitti -->
+        <div  class="carousel">
+
+            <div class="faixa-esquerda faixa">
+                <button class="flecha" onclick="back()"> &lt; </button>
+            </div>
+
+            <div class="carousel-images">
+                <img id="carousel-slot1" src="./assets/images/op1.jpeg">
+                <img id="carousel-slot2" src="./assets/images/op2.jpeg">
+                <img id="carousel-slot3" src="./assets/images/op3.jpeg">
+            </div>
+
+            <div class="faixa-direita faixa">
+                <button class="flecha" onclick="next()"> &gt; </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <section class="anotherSection">
+    Código do Pedro -->
+        <!-- <div  class="carousel">
+            
+            <div class="faixa-esquerda faixa">
+                <button class="flecha" onclick="back()"> &lt; </button>
+            </div>
+
+            <div class="divImagem-left"><img id="space1" src="assets/images/op1.jpeg"></div>
+            <div><img id="space2" src="assets/images/op2.jpeg"></div>
+            <div><img id="space3" src="assets/images/op3.jpeg"></div>
+
+            <div class="faixa-direita faixa">
+                <button class="flecha" onclick="next()"> &gt; </button>
+            </div>
+
+        </div>
+    </section> --> 
+
+    <section class="secondSection grid-one">
+        <div class="mainContent grid-one-content">
+            <h2 class="grid-heading">My Grid</h2>
+            <p class="grid-description">Descrição</p>
+
+            <div class="grid">
+                <article>
+                    <h3>Titulo 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, perferendis! Facilis soluta expedita ipsa numquam autem earum, odit quaerat! Repellendus, temporibus nisi numquam commodi beatae nobis. Labore vitae inventore nostrum.</p>
+                </article>
+                <article>
+                    <h3>Titulo 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, perferendis! Facilis soluta expedita ipsa numquam autem earum, odit quaerat! Repellendus, temporibus nisi numquam commodi beatae nobis. Labore vitae inventore nostrum.</p>
+                </article>
+                <article>
+                    <h3>Titulo 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, perferendis! Facilis soluta expedita ipsa numquam autem earum, odit quaerat! Repellendus, temporibus nisi numquam commodi beatae nobis. Labore vitae inventore nostrum.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+</main>
+  <!-- Ion Icon (sol e lua) -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  
+</body>
+
+</html>
