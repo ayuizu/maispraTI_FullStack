@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+}
+
+.boxA{
+    display: grid;
+    border:2px solid cadetblue;
+    border-radius: 5px;
+    background-color:lightblue;
+    padding: 1em;
+    color: brown;
+    /*Configurar linhas e colunas*/
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 40px 100px;
+}
+
+/*div dentro do .boxA*/
+.boxA > div {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.boxB{
+    display: grid;
+    border:2px solid cadetblue;
+    border-radius: 5px;
+    background-color:lightblue;
+    padding: 1em;
+    color: rgb(165, 42, 144);
+    /*Configurar linhas e colunas*/
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    /* fr = fração; responsividade */
+}
+
+/*div dentro do .boxB*/
+.boxB > div {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.boxC{
+    display: grid;
+    border:2px solid cadetblue;
+    border-radius: 5px;
+    background-color:lightblue;
+    padding: 1em;
+    color: rgb(165, 163, 42);
+    /*Configurar linhas e colunas*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
+    /* fr = fração; responsividade */
+}
+
+/*div dentro do .boxC*/
+.boxC > div {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.boxD{
+    display: grid;
+    border:2px solid cadetblue;
+    border-radius: 5px;
+    background-color:lightblue;
+    padding: 1em;
+    color: rgb(204, 107, 50);
+    /*Configurar linhas e colunas*/
+    grid-template-columns: 20px repeat(4, 1fr) 20px;
+    /*auto define para todos - min 100px, max auto*/
+    grid-auto-rows: minmax(100px,auto);
+
+    /* fr = fração; responsividade */
+}
+
+/*div dentro do .boxC*/
+.boxD > div {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.boxE{
+    display: grid;
+    border:2px solid cadetblue;
+    border-radius: 5px;
+    background-color:lightblue;
+    padding: 1em;
+    color: brown;
+    /*Configurar linhas e colunas*/
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    gap: 10px;
+}
+
+/*div dentro do .boxA*/
+.boxE > div {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.oneE{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.twoE{
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+.threeE{
+    grid-column: 1;
+    grid-row: 2/5;
+}
+.fourE{
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+.boxF{
+    display: grid;
+    border:2px solid cadetblue;
+    border-radius: 5px;
+    background-color:lightblue;
+    padding: 1em;
+    color: rgb(99, 98, 33);
+    /*Configurar linhas e colunas*/
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    gap: 10px;
+}
+
+.boxF > div {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.oneF{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end: 1;
+
+}
+
+.twoF{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start:1;
+    grid-row-end: 3;
+
+}
+.threeF{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start:2;
+    grid-row-end: 5;
+
+}
+.fourF{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end: 1;
+
+}
+
+/* Direto da documentação */
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* fr = fração do espaço disponivel */
+    /* configura colunas */
+
+    gap: 10px;
+    /* grid-auto-rows: minmax(100px, auto); */
+    border: 2px solid cadetblue;
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 1em;
+    color: brown;
+}
+
+.box > div {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
