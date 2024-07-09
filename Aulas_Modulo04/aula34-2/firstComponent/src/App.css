@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+:root{
+    /* Color Theme Swatches*/
+    --primary-color: #8C0327;
+    --secondary-color: #593825; 
+    --tertiary-color: #D9B29C; 
+    --quaternary-color: #260F06;
+    --quinary-color: #A61C1C;
+
+    /* Color Theme Swatches in Hex */
+    --Natureza-1-color: #232625; 
+    --Natureza-2-color: #35403A; 
+    --Natureza-3-color: #4C594F; 
+    --Natureza-4-color: #A4A69C; 
+    --Natureza-5-color: #BFBFB8; 
+
+}
+body{
+    background-color: #e0e0e0;
+}
+nav{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 10%;
+    grid-template-columns: 3fr 9fr;
+    background-color: var(--quinary-color);
+    padding: 1rem;
+    justify-content: center;
+    border: solid 2px blue;
+
+}
+
+nav .logo{
+    float: left;
+
+    margin-left: 20%;
+    border: solid 2px blue;
+}
+h1{
+    color: var(--tertiary-color);
+    font-size: 2rem;
+}
+
+nav ul{
+    border: solid 2px blue;
+    list-style: none;
+    margin-right: 20%;
+    display: grid;
+    justify-content: center;
+    float: right;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    padding: 10px;
+    
+}
+nav a{
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav a:hover{
+    color:var(--secondary-color);
+    font-weight: bolder;
+}
