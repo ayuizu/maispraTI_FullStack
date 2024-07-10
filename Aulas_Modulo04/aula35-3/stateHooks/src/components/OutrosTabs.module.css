@@ -1,0 +1,92 @@
+/** Geral */
+
+:root{
+    --zero-color: #e0eff1;
+    --primary-color:#48d9f3;
+    --secondary-color:#2d3942;
+    --tertiary-color:#273133;
+    --quaternary-color:#181c1f;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main{
+    margin-left: 30px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: 80px 32px auto;
+    gap:0;
+}
+
+/** Cabeçalho */
+
+header{
+    display: flex;
+    color:var(--primary-color);
+    height: 80px;
+
+}
+
+.icon{
+    color:var(--primary-color);
+}
+
+/** Abas - Navegação  */
+
+.btn{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    color:var(--zero-color);
+
+}
+
+.btn button{
+    width: 160px;
+    height: 32px;
+    background-color: var(--tertiary-color);
+    color:var(--zero-color);
+
+    outline:none;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    
+}
+
+.btn button:hover, .active{
+    background-color: var(--primary-color);
+    color:var(--tertiary-color);
+}
+
+/** Abas - Conteudo  */
+
+.cnt{
+    display: flex;
+    background-color: var(--secondary-color);
+    color:var(--zero-color);
+
+    line-height: 2;
+    font-size: 0.8rem;
+
+    width: 500px;
+    min-height:200px;
+    height: auto;
+}
+
+.cnt > div{
+    padding: 10px;
+    margin-left: 30px;
+    background-color: var(--secondary-color);
+}
+
+.cnt div button{
+    background-color: var(--tertiary-color);
+    color: var(--zero-color);
+    padding: 2px;
+}

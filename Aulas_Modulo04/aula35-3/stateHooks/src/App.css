@@ -1,0 +1,11 @@
+:root{
+    --zero-color: #e0eff1;
+    --primary-color:#48d9f3;
+    --secondary-color:#2d3942;
+    --tertiary-color:#273133;
+    --quaternary-color:#181c1f;
+}
+
+body{
+    background-color:var(--quaternary-color);
+}
