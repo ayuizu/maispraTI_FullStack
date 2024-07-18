@@ -12,7 +12,7 @@ function Desafio(){
     })
 
     const [error, setErros] = useState({})
-    const [submit, isSubmited] = useState(false)
+    const [submitted, setSubmitted] = useState(false)
 
     const handleChange = (event) =>{
         //Desestruturando event.target em name e value (do input)
@@ -70,8 +70,12 @@ function Desafio(){
         const validation = validade()
 
         //Se não tiver erros, submeter. Do contrário, exibir erros
-        if(Object.keys(validation).length === 0)
-            alert('Usuário cadastrado com sucesso')
+        if(Object.keys(validation).length === 0){
+        //Object.keys(validation): Esta função retorna um ARRAY com os nomes das propriedades (chaves) próprias de um objeto. Ou seja, ela obtém todas as chaves do objeto validation.
+            setSubmitted(true) 
+            // alert('Usuário cadastrado com sucesso')
+
+        }
         else
             setErros(validation)
     }
@@ -82,8 +86,9 @@ function Desafio(){
             <div>
                 <label>Nome completo: </label>
                 <input type="text" name='fullName' onChange={handleChange}/>
-
-                {error.name && <p>{error.name}</p>}
+                {/* No React, qualquer coisa entre chaves {} será interpretada como uma expressão JavaScript. */}
+                {/* se a expressão à esquerda do && for verdadeira, a expressão à direita será avaliada e retornada. */}
+                {error.name && !submitted && <p>{error.name}</p>}
             </div>
 
             <br />
@@ -92,7 +97,7 @@ function Desafio(){
                 <input type="text" name='email' onChange={handleChange}/>
             </div>
             <div>
-                {error.email && <p>{error.email}</p>}
+                {error.email && !submitted && <p>{error.email}</p>}
              </div>
 
             <br />
@@ -101,7 +106,7 @@ function Desafio(){
                 <input type="password" name='password' onChange={handleChange}/>
             </div>
             <div>
-                {error.password && <p>{error.password}</p>}
+                {error.password && !submitted && <p>{error.password}</p>}
             </div>
 
             <br />
@@ -110,9 +115,10 @@ function Desafio(){
                 <input type="password" name='passwordConfirm' onChange={handleChange}/>
             </div>
             <div>
-                {error.passwordConfirm && <p>{error.passwordConfirm}</p>}
+                {error.passwordConfirm && !submitted && <p>{error.passwordConfirm}</p>}
             </div>
             <br />
+            {submitted && <div><p className={classes.success} >Registrado com sucesso!</p><br/></div>}
             <button type="submit">Submeter</button>
         </form>
     )

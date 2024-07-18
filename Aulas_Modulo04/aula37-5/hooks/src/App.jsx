@@ -13,11 +13,11 @@ function App() {
     <>
       <TimerComponent />
       <hr />
-      <UserProfile />
+      {/* <UserProfile /> */}
       <hr />
-      <News />
+      {/* <News /> */}
       <hr />
-      <NewsUpdater />
+      {/* <NewsUpdater /> */}
     </>
   )
 }
