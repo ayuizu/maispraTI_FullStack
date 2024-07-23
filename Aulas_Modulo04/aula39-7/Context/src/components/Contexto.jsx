@@ -9,7 +9,7 @@ export const MyContext = createContext()
 //Envolve componente filho com a propriedade name
 export const MyProvider = (props) => {
     return(
-        <MyContext.Provider value = {{ name: 'João'}}>
+        <MyContext.Provider value = {{ name: 'Ayumi'}}>
             {props.children}
         </MyContext.Provider>
     )
