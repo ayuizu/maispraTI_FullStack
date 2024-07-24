@@ -6,7 +6,7 @@ import Clock from './components/Clock'
 import Timer from './components/Timer'
 
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import Navigation from './components/Navigation'
 
 function App() {
@@ -19,9 +19,11 @@ function App() {
         {/* Route define um componente específico a ser renderizado e o path especídico */}
         <Route path='/' Component={Home} /> 
         <Route path='/about' Component={About} /> 
-        <Route path='/contact' Component={Contact} /> 
+        <Route path='/contact' element={<Navigate to="/"/>} /> 
+        {/* REDIRECT/NAVIGATE - Pq usar element? O Component era mais usado na v5. RouterDOM v6 substituiu por element */}
+                {/* Pq usar element? O Component era mais usado na v5. RouterDOM v6 substituiu por element */}
         <Route path='/clock' Component={Clock} /> 
-        <Route path='/timer' Component={Timer} /> 
+        <Route path='/timer' element={<Navigate to="/"/>} />
           
       </Routes>
     </Router>
