@@ -1,0 +1,49 @@
+.footer{
+    margin: 0;
+    width: 100vw;
+    height: 311px;
+    display:flexbox;
+    flex-direction: column;
+    text-align: left;
+    justify-content: bottom;
+    background-color: black;
+    opacity: 90%;
+
+    position: absolute;
+    left:0%;
+    width: 100%;
+}
+
+.footer a{
+    text-decoration: underline;
+    line-height: 2;
+    color: #ffffffb4;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.telephoneNumber{
+    margin: 10px 0 0 180px;
+    color: #ffffffb4;
+}
+
+.telephoneNumber a{
+    text-decoration: none;
+}
+
+.telephoneNumber a:hover{
+    text-decoration: underline;
+}
+.linkList{
+    margin: 10px 10px 10px 180px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 12px;
+}
+
+
+@media (max-width: 600px){
+    .footer{
+        border-top: gray 0.5px solid;
+    }
+}

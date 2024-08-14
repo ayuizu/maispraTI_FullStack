@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../assets/bg1.jpg) no-repeat,
+                url(../assets/ruido.png) repeat;
+    background-color: black;
+    background-attachment: fixed;
+
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    color: #333;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 16px;
+
+    align-content: center;
+
+}
+
+.loginMain{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 3fr auto 3fr;
+    grid-template-columns: auto;
+    row-gap: 50px;
+}
+
+/*! Logo Netflix */
+.logo{
+
+    display: flex;
+    justify-content: left;
+    margin-left: -80%;
+    margin-top:5%;
+
+}
+.logo>img{
+    width:150px;
+    height: auto;
+    object-fit: contain;
+
+}
+
+/*! Login */
+.container{
+    width: 450px;
+    height: 735px;
+    background-color: black;
+    opacity: 80%;
+    padding: 50px 68px;
+}
+
+h1 {
+    /* color: #333; */
+    color: white;
+    text-align: left;
+
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 0 .4em;
+}
+
+/*? Links genéricos */
+
+a, a:active, a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+/*? Inputs de text para Login */
+
+/* "Placeholder" normal */
+input:focus ~ .floatingLabel,
+input:not(:focus):valid ~ .floatingLabel1,
+input:not(:focus):valid ~ .floatingLabel2
+{
+    font-size: 16px;
+    opacity: 1;
+    top: -40px;
+    bottom: 0px;
+    left: 15px;
+}
+
+
+.inputText:hover{
+    border:5px solid white;
+}
+
+.inputText {
+  font-size: 14px;
+  color: #fff;
+  padding: 20px 5px 20px 5px;
+  background-color: black;
+  border: 1px solid white;
+  width: 314px;
+  height: 56px;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+/* "Placeholder" reduzido */
+.floatingLabel1, .floatingLabel2, input:not(:placeholder-shown) ~ .floatingLabel1,
+input:not(:placeholder-shown) ~ .floatingLabel2{
+    position: relative;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    font-size: 10px;
+    top: -60px;
+    color: #ffffffb4;
+    left: 15px;
+    
+}
+
+.inputText:active, .inputText::after{
+    border: solid 3px white;
+}
+
+input:not(:placeholder-shown), input:focus{
+    background-color: #202836;
+}
+
+input:not(:placeholder-shown), input:focus{
+    background-color: #202836;
+}
+
+/*? Texto */
+
+span, label{
+    color: white;
+}
+
+p{
+    color: white;
+    line-height: 3.5em;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.light{
+    font-weight:light;
+    line-height: 1em;
+    color: #ffffffb4;
+    font-size:14px;
+}
+
+.center{
+    text-align: center;
+}
+
+/*? Links azuis */
+
+.blueLink a, .blueLink a:active,.blueLink a:visited, .blueLink a:hover{
+    color: #174ADE;
+    cursor: pointer;
+}
+
+/*? Botões  */
+
+.btn1,.btn2{
+    width: 314px;
+    height: 40px;
+}
+.btn1{
+    background-color: red;
+    color: white;
+}
+.btn1:hover{
+    background-color: #C11119;
+}
+.btn2{
+    background-color: rgb(61, 60, 60);
+    color: white;
+}
+
+/*? Responsividade  */
+
+@media screen and (min-width: 740px) {
+    h1 {
+        font-size:2.15em;
+        margin: 0 0 .55em
+    }
+}
+
+h2,h3,h4,h5 {
+    font-weight: 400;
+    margin: .75em 0 .25em
+}
+
+@media (max-width: 600px){
+    body{
+        background-image: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .inputText{
+        width: 50vh;
+    }
+    .btn1, .btn2{
+        width: 50vh;
+    }
+}
+
+@media (max-width: 960px){
+    .logo>img{
+        width: 100px;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+}
