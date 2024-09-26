@@ -2,10 +2,14 @@
 import encapsulation.BankAccount;
 import encapsulation.BankTransaction;
 
+import singleton.ConfigurationManager;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
+
+        //Aula 56 - Encapsulamento
+
+        //Interface
         BankAccount account = new BankAccount("12345",1000);
         System.out.println("Saldo na conta " + account.getAccountNumber() + ": " + account.getBalance());
 
@@ -15,8 +19,11 @@ public class Main {
         System.out.println(depositTransaction.getDetails());
         System.out.println("Saldo na conta " + account.getAccountNumber() + ": " + account.getBalance());
 
+        //Singleton
+        ConfigurationManager configManager = ConfigurationManager.getInstance();
 
-
+        String dbUser = configManager.getProperty("db.user");
+        System.out.println("Usuário do banco de dados: " + dbUser);
 
 
     }

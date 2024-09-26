@@ -1,5 +1,10 @@
 package encapsulation;
 
+//Aula 56 - Encapsulamento
+
+//INTERFACES
+//ENUM
+
 public class BankTransaction implements Transaction{
     //Atributos
     private final BankAccount account; //Não vai ser alterado
