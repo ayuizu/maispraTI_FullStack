@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aula46-01/Aula46-01.iml" filepath="$PROJECT_DIR$/Aula46-01/Aula46-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula47-02/Aula47-02.iml" filepath="$PROJECT_DIR$/Aula47-02/Aula47-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula48-03/Aula48-03.iml" filepath="$PROJECT_DIR$/Aula48-03/Aula48-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula49-04/Aula49-04.iml" filepath="$PROJECT_DIR$/Aula49-04/Aula49-04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula50-DataStructure/Aula50-DataStructure.iml" filepath="$PROJECT_DIR$/Aula50-DataStructure/Aula50-DataStructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula51-DS-Fila/Aula51-DS-Fila.iml" filepath="$PROJECT_DIR$/Aula51-DS-Fila/Aula51-DS-Fila.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Aulas_Modulo05.iml" filepath="$PROJECT_DIR$/.idea/Aulas_Modulo05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula49-04/moduloTeste/moduloTeste.iml" filepath="$PROJECT_DIR$/Aula49-04/moduloTeste/moduloTeste.iml" />
+    </modules>
+  </component>
+</project>
