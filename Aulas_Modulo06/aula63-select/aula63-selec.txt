@@ -1,0 +1,73 @@
+SELECT
+
+USE mydb;
+
+--Selecionar tudo
+SELECT * FROM Recursos;
+
+--Selecionar colunas especificas
+SELECT nomeRecurso FROM Recursos;
+SELECT nomeRecurso, SalarioRecurso, endereco_idEndereco FROM Recursos;
+
+--Selecionar columas específicas com condição
+SELECT nomeRecurso, salarioRecurso FROM recursos WHERE nomeRecurso='Ayumi';
+
+--Ordenar recursos por salario (crescente, 10 primeiros)
+SELECT nomeRecurso, salarioRecurso FROM Recursos ORDER BY salariorECURSO LIMIT 10;
+
+
+--Ordenar recursos por salario (decrescente)
+SELECT nomeRecurso, salarioRecurso FROM Recursos ORDER BY salarioRECURSO DESC;
+
+--Cargo que começa com D
+SELECT nomeCargo FROM cargos WHERE nomeCargo LIKE "D%";
+--Cargo que termina com R
+SELECT nomeCargo FROM cargos WHERE nomeCargo LIKE "%r";
+--Cargo que tem letra E no meio
+SELECT nomeCargo FROM cargos WHERE nomeCargo LIKE "%E%";
+--Cargo que tem letra E no meio e 3 caracteres
+SELECT nomeCargo FROM cargos WHERE nomeCargo LIKE "_E_";
+--Cargo que começa com DEV e tem + 3 caracteres
+SELECT nomeCargo FROM cargos WHERE nomeCargo LIKE "Dev___";
+--Cargo que começa com DEV e tem + 2 caracteres + qualquer coisa
+SELECT nomeCargo FROM cargos WHERE nomeCargo LIKE "Dev__%";
+
+--Contar cargos e enderecis (todos)
+SELECT count(*) FROM Cargos;
+SELECT count(*) FROM Endereco;
+
+--Contar complementos em Endereco (sem null)
+SELECT count(endComplemento) FROM Endereco;
+
+--Operações aritméticas (soma, média, menor, maior)
+SELECT sum(salarioRecurso) FROM recursos;
+SELECT avg(salarioRecurso) FROM recursos;
+SELECT min(salarioRecurso) FROM recursos;
+SELECT max(salarioRecurso) FROM recursos;
+
+--Contar nomeFerramentas em ferramentas
+SELECT nomeFerramenta, COUNT(*) from Ferramentas GROUP BY nomeFerramenta;
+
+--Contar recursos por idCargo
+SELECT cargo_idcargo, COUNT(*) FROM Recursos GROUP BY Cargo_idCargo;
+--Filtar contagem >5
+SELECT cargo_idcargo, COUNT(*) FROM Recursos GROUP BY Cargo_idCargo HAVING count(*)>5;
+
+--Relacionar Recursos e Cargos (união básica, repete tudo >> usar JOIN)
+SELECT * FROM Recursos, Cargos WHERE Recursos.Cargo_idCargo = Cargos.idCargo;
+
+-- INNER JOIN (ou só JOIN) Selecionar só NomeRecurso e NomeCargo juntando Recursos e Cargos
+SELECT Recursos.nomeRecurso, Cargos.nomeCargo FROM Recursos INNER JOIN Cargos ON Recursos.Cargo_idCargo = Cargos.idCargo;
+
+-- LEFT JOIN (aparecem todos do primeiro - segundo NULL)
+SELECT Recursos.nomeRecurso, Cargos.nomeCargo FROM Recursos LEFT JOIN Cargos ON Recursos.Cargo_idCargo = Cargos.idCargo;
+
+
+-- RIGHT JOIN (aparecem todos do segundo - primeiro NULL)
+INSERT INTO Cargos(nomeCargo,descricao)
+VALUES('DevOps','Não sei o que faz');
+SELECT Recursos.nomeRecurso, Cargos.nomeCargo FROM Recursos RIGHT JOIN Cargos ON Recursos.Cargo_idCargo = Cargos.idCargo;
+
+-- Existe o FULL JOIN ou FULL OUTER JOIN (não tem no MySQL) que retorna todos os registros dos dois lados, mesmo que não tenha correspondência do outro lado
+
+-- UNION junta os dados das duas tabelas, mesmo que não tenha lógica (ex: recursos.idCargo = 3, cargos.idCargo=1)

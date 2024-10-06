@@ -1,0 +1,114 @@
+--No cmd
+
+mysql -u root -p
+--Colocar senha
+
+SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+--Criando database
+CREATE DATABASE ITSolutions;
+SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| itsolutions        |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+--Usar database criada
+USE itsolutions;
+
+--Criar tabela
+CREATE TABLE Recursos(
+    -> id_recurso INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    -> nome VARCHAR(255) NOT NULL,
+    -> salario DECIMAL(10,2) NOT NULL);
+
+--Consultar tabelas existentes na database
+SHOW TABLES;
++-----------------------+
+| Tables_in_itsolutions |
++-----------------------+
+| recursos              |
++-----------------------+
+
+CREATE TABLE HistoricoSalario (
+    -> id_historicoSalario INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    -> data_aumento DATE NOT NULL,
+    -> valor_salario DECIMAL(10,2) NOT NULL,
+    -> id_recurso INT NOT NULL,
+    -> FOREIGN KEY (id_recurso) REFERENCES recursos(id_recurso) ON DELETE CASCADE);
+
+--DELETE CASCADE = se deletar o recurso, deleta o histórico também
+
+SHOW TABLES;
++-----------------------+
+| Tables_in_itsolutions |
++-----------------------+
+| historicosalario      |
+| recursos              |
++-----------------------+
+
+-- Consultar como está a tabela recursos
+DESC recursos;
+-- ou DESCRIBE recursos;
++------------+---------------+------+-----+---------+----------------+
+| Field      | Type          | Null | Key | Default | Extra          |
++------------+---------------+------+-----+---------+----------------+
+| id_recurso | int           | NO   | PRI | NULL    | auto_increment |
+| nome       | varchar(255)  | NO   |     | NULL    |                |
+| salario    | decimal(10,2) | NO   |     | NULL    |                |
++------------+---------------+------+-----+---------+----------------+
+
+ CREATE TABLE Telefone(
+    -> id_telefone INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    -> id_recurso INT NOT NULL,
+    -> numero_telefone VARCHAR(20) NOT NULL,
+    -> tipo_telefone_ ENUM('Residencial', 'Comercial', 'Celular', 'Ramal') NOT NULL,
+    -> FOREIGN KEY (id_recurso) REFERENCES recursos(id_recurso) ON DELETE CASCADE);
+
+CREATE TABLE Ferramentas(
+    -> id_ferramenta INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    -> nome_ferramenta VARCHAR(255) NOT NULL,
+    -> versao VARCHAR(20) NOT NULL);
+
+
+CREATE TABLE Ferramentas_Programador(
+    -> id_Ferramentas_Programador INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    -> id_ferramenta INT NOT NULL,
+    -> id_programador INT NOT NULL,
+    -> FOREIGN KEY (id_ferramenta) REFERENCES ferramentas(id_ferramenta) ON DELETE CASCADE,
+    -> FOREIGN KEY (id_programador) REFERENCES recursos(id_recurso) ON DELETE CASCADE);
+
+CREATE TABLE Cargos(
+    -> id_cargo INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    -> nome_cargo VARCHAR(100) NOT NULL);
+
+CREATE TABLE Endereco(
+    -> id_endereco INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    -> rua VARCHAR(255) NOT NULL,
+    -> id_recurso INT NOT NULL,
+    -> numero VARCHAR(10) NOT NULL,
+    -> cidade VARCHAR(45) NOT NULL,
+    -> CEP VARCHAR(10) NOT NULL,
+    -> estado VARCHAR(45) NOT NULL,
+    -> complemento VARCHAR(45),
+    -> FOREIGN KEY (id_recurso) REFERENCES recursos(id_recurso) ON DELETE CA
+SCADE);
+
+exit;
+
+--Continua no MySQL WORKBENCH

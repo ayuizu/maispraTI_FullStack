@@ -1,0 +1,264 @@
+-- Não sei pq, mas os IDs começaram em números estranhos
+
+USE mydb;
+
+ALTER TABLE Cargos DROP COLUMN salario;
+INSERT INTO Cargos(nomeCargo, descricao)
+VALUES ('Suporte','Resolve problemas com os clientes');
+ 
+INSERT INTO Equipe (nomeEquipe, numerRecursos) 
+VALUES 
+('Equipe Alpha', 5),
+('Equipe Beta', 7),
+('Equipe Gamma', 10),
+('Equipe Delta', 6),
+('Equipe Epsilon', 8),
+('Equipe Zeta', 9),
+('Equipe Theta', 10),
+('Equipe Iota', 12),
+('Equipe Kappa', 7),
+('Equipe Lambda', 5),
+('Equipe Mu', 11),
+('Equipe Nu', 9),
+('Equipe Xi', 13),
+('Equipe Omicron', 6),
+('Equipe Pi', 10),
+('Equipe Rho', 15),
+('Equipe Sigma', 14),
+('Equipe Tau', 8),
+('Equipe Upsilon', 5),
+('Equipe Phi', 7),
+('Equipe Chi', 6),
+('Equipe Psi', 12),
+('Equipe Omega', 10),
+('Equipe Alpha Prime', 9),
+('Equipe Beta Prime', 6),
+('Equipe Gamma Prime', 11),
+('Equipe Delta Prime', 8),
+('Equipe Epsilon Prime', 7),
+('Equipe Zeta Prime', 10),
+('Equipe Theta Prime', 9);
+
+INSERT INTO Endereco (endLogradouro, endNumero, endComplemento, endCidade, endEstado, endPais, endCEP) 
+VALUES 
+('Rua Verde', '123', 'Apto 101', 'São Paulo', 'SP', 'Brasil', '01000-000'),
+('Avenida Central', '456', NULL, 'Rio de Janeiro', 'RJ', 'Brasil', '21000-000'),
+('Rua dos Pássaros', '789', 'Casa', 'Curitiba', 'PR', 'Brasil', '80000-000'),
+('Rua das Flores', '101', 'Apto 502', 'Salvador', 'BA', 'Brasil', '40000-000'),
+('Avenida Paulista', '1200', NULL, 'São Paulo', 'SP', 'Brasil', '01310-100'),
+('Travessa João de Barro', '78', 'Casa 3', 'Fortaleza', 'CE', 'Brasil', '60000-000'),
+('Rua do Comércio', '45', 'Loja 1', 'Curitiba', 'PR', 'Brasil', '80000-300'),
+('Avenida das Américas', '550', NULL, 'Rio de Janeiro', 'RJ', 'Brasil', '22640-100'),
+('Rua dos Pioneiros', '302', 'Casa', 'Porto Alegre', 'RS', 'Brasil', '90000-150'),
+('Rua Sete de Setembro', '409', 'Apto 201', 'Recife', 'PE', 'Brasil', '50000-050'),
+('Avenida Presidente Vargas', '200', 'Sala 3', 'Belém', 'PA', 'Brasil', '66000-700'),
+('Rua Amazonas', '150', 'Apto 103', 'Manaus', 'AM', 'Brasil', '69000-001'),
+('Rua dos Andradas', '220', NULL, 'Florianópolis', 'SC', 'Brasil', '88000-600'),
+('Avenida Santos Dumont', '740', NULL, 'Natal', 'RN', 'Brasil', '59000-450'),
+('Rua Dom Pedro II', '56', 'Cobertura', 'Brasília', 'DF', 'Brasil', '70000-700'),
+('Rua das Laranjeiras', '404', 'Apto 604', 'Belo Horizonte', 'MG', 'Brasil', '30100-000'),
+('Avenida Independência', '987', NULL, 'Vitória', 'ES', 'Brasil', '29000-300'),
+('Rua Boa Vista', '307', 'Loja 5', 'Maceió', 'AL', 'Brasil', '57000-250'),
+('Rua Coronel Fabriciano', '80', NULL, 'Uberlândia', 'MG', 'Brasil', '38400-220'),
+('Avenida do Estado', '600', 'Galpão 3', 'Campinas', 'SP', 'Brasil', '13000-020'),
+('Rua São Francisco', '125', 'Apto 902', 'João Pessoa', 'PB', 'Brasil', '58000-120'),
+('Avenida Tiradentes', '34', NULL, 'São Luís', 'MA', 'Brasil', '65000-400'),
+('Rua General Osório', '89', NULL, 'Aracaju', 'SE', 'Brasil', '49000-500'),
+('Rua da República', '212', 'Apto 204', 'Teresina', 'PI', 'Brasil', '64000-030'),
+('Avenida Brasil', '750', 'Sala 2', 'Cuiabá', 'MT', 'Brasil', '78000-500'),
+('Rua Maranhão', '130', 'Casa 2', 'Campo Grande', 'MS', 'Brasil', '79000-200'),
+('Avenida Goiás', '360', NULL, 'Goiânia', 'GO', 'Brasil', '74000-010'),
+('Rua Bahia', '221', 'Apto 505', 'Salvador', 'BA', 'Brasil', '40100-200'),
+('Avenida Rondon Pacheco', '500', NULL, 'Uberaba', 'MG', 'Brasil', '38000-100'),
+('Rua José de Alencar', '102', 'Apto 302', 'Pelotas', 'RS', 'Brasil', '96000-020'),
+('Avenida Ceará', '79', 'Loja 8', 'Rio Branco', 'AC', 'Brasil', '69900-400');
+
+INSERT INTO HistoricoSalario (salarioAumento, dataAumento, Recurso_idRecurso) 
+VALUES 
+(13000.00, '2023-01-01', 71),
+(15500.00, '2023-02-01', 72),
+(8500.00, '2023-03-01', 73);
+
+INSERT INTO Recursos (nomeRecurso, salarioRecurso, Cargo_idCargo, Endereco_idEndereco, Equipe_idEquipe1) 
+VALUES 
+('Carlos Silva', 12000.00, 1, 1, 1),
+('Maria Oliveira', 15000.00, 2, 2, 2),
+('João Pereira', 8000.00, 4, 3, 3),
+('Ana Costa', 9500.00, 1, 1, 1),
+('Bruno Souza', 11000.00, 2, 2, 2),
+('Carla Lima', 9800.00, 4, 3, 3),
+('Daniel Santos', 10500.00, 1, 4, 4),
+('Eduardo Alves', 11500.00, 2, 5, 5),
+('Fernanda Nunes', 10000.00, 4, 6, 6),
+('Gabriela Castro', 13000.00, 1, 7, 7),
+('Heitor Duarte', 12000.00, 2, 8, 8),
+('Isabela Ferreira', 14000.00, 4, 9, 9),
+('João Matos', 9000.00, 1, 10, 10),
+('Karla Moura', 15000.00, 2, 11, 11),
+('Lucas Barros', 16000.00, 4, 12, 12),
+('Mariana Neves', 17000.00, 1, 13, 13),
+('Nicolas Cardoso', 9500.00, 2, 14, 14),
+('Olivia Ribeiro', 12000.00, 4, 15, 15),
+('Paulo Martins', 13500.00, 1, 16, 16),
+('Quintino Silva', 10000.00, 2, 17, 17),
+('Renata Teixeira', 11000.00, 4, 18, 18),
+('Sara Guimarães', 9500.00, 1, 19, 19),
+('Thiago Rocha', 14000.00, 2, 20, 20),
+('Ursula Braga', 14500.00, 4, 21, 21),
+('Vinicius Amaral', 16000.00, 1, 22, 22),
+('Wesley Fonseca', 9000.00, 2, 23, 23),
+('Xavier Monteiro', 13000.00, 4, 24, 24),
+('Yara Lopes', 15500.00, 1, 25, 25),
+('Zilda Vasconcelos', 17000.00, 2, 26, 26),
+('Arthur Carvalho', 12500.00, 4, 27, 27),
+('Beatriz Monte', 11500.00, 1, 28, 28),
+('Caio Pires', 14500.00, 2, 29, 29),
+('Diana Oliveira', 13500.00, 4, 30, 30);
+
+INSERT INTO Projeto (nomeProjeto, statusProj, dataInicioProj, previsaoDataFinalProj, dataFinalProj, previsaoNumHoras, numHorasProj, Recurso_idGerente, Equipe_idEquipe) 
+VALUES 
+('Projeto Apollo', 'Em andamento', '2023-01-15', '2023-12-31', NULL, 150, NULL, 68, 1),
+('Projeto Hermes', 'Aguardando Prioridade', '2023-03-01', '2023-11-01', NULL, 120, NULL, 69, 2),
+('Projeto Artemis', 'Finalizadi', '2022-07-15', '2023-05-01', '2023-05-01', 100, 950.0, 70, 3),
+('Projeto Athena', 'Em andamento', '2023-06-20', '2024-02-28', NULL, 130, NULL, 71, 4),
+('Projeto Hera', 'Em andamento', '2023-08-01', '2024-03-15', NULL, 110, NULL, 72, 5);
+
+INSERT INTO Ferramentas (nomeFerramenta, versaoFerramenta)
+VALUES 
+('Git', '2.38'),
+('Docker', '20.10'),
+('Kubernetes', '1.21'),
+('Jenkins', '2.303'),
+('IntelliJ IDEA', '2022.2'),
+('Eclipse', '2021-06'),
+('Visual Studio Code', '1.62'),
+('Postman', '9.1'),
+('Maven', '3.8'),
+('Gradle', '7.2');
+
+INSERT INTO Recursos_Ferramentas (Recurso_idRecurso, Ferramenta_idFerramenta)
+VALUES 
+(1, 1),
+(68, 2),
+(69, 3),
+(70, 4),
+(71, 5),
+(1, 6),
+(72, 7),
+(73, 8),
+(76, 9),
+(79, 10),
+(80, 1),
+(86, 2),
+(79, 3),
+(89, 4),
+(68, 5),
+(69, 6),
+(86, 7),
+(90, 8),
+(91, 9),
+(92, 10);
+
+INSERT INTO Atividade (nomeAtividade)
+VALUES 
+('Planejamento do Projeto'),
+('Desenvolvimento do Backend'),
+('Desenvolvimento do Frontend'),
+('Testes Unitários'),
+('Integração Contínua'),
+('Desenvolvimento da API'),
+('Testes de Integração'),
+('Deploy em Produção'),
+('Manutenção Corretiva'),
+('Documentação do Sistema'),
+('Revisão de Código'),
+('Treinamento da Equipe'),
+('Análise de Requisitos'),
+('Gerenciamento de Configurações'),
+('Suporte Técnico'),
+('Monitoramento de Aplicações'),
+('Refatoração de Código'),
+('Testes de Desempenho'),
+('Gerenciamento de Versões'),
+('Reunião de Sprint'),
+('Desenvolvimento Mobile'),
+('Criação de Prototipo'),
+('Testes Funcionais'),
+('Testes de Segurança'),
+('Backup e Recuperação'),
+('Implementação de Logs'),
+('Ajustes de Performance'),
+('Migração de Dados');
+
+INSERT INTO Tarefa (descTarefa, Atividade_idAtividade)
+VALUES 
+('Implementar autenticação de usuários', 1),
+('Configurar ambiente de desenvolvimento', 2),
+('Criar API de login', 3),
+('Desenvolver interface de usuário', 4),
+('Testar integração com backend', 5),
+('Configurar pipeline de CI/CD', 6),
+('Implementar cache de resultados', 7),
+('Documentar arquitetura do sistema', 8),
+('Testar sistema em ambiente de homologação', 9),
+('Implementar controle de acesso', 10);
+
+INSERT INTO ProjetoAtividade (Atividade_idAtividade, Projeto_idProjeto)
+VALUES 
+(1, 61),
+(2, 62),
+(3, 63),
+(4, 64),
+(5, 65),
+(6, 66),
+(7, 67),
+(8, 68),
+(9, 69),
+(10, 60),
+(1, 61),
+(2, 62),
+(3, 63),
+(4, 64),
+(5, 65),
+(6, 66),
+(7, 67),
+(8, 68),
+(9, 69),
+(10, 60);
+
+ALTER TABLE contato DROP COLUMN Recurso_Equipe_idEquipe;
+
+INSERT INTO Contato (tipoContato, numeroContato, Recurso_idRecurso)
+VALUES 
+('Telefone', '1234-5678', 1),
+('Email', 'recurso1@empresa.com', 68),
+('Telefone', '8765-4321', 68),
+('Email', 'recurso2@empresa.com', 69),
+('Telefone', '9876-5432', 69),
+('Email', 'recurso3@empresa.com', 70),
+('Telefone', '5678-1234', 70),
+('Email', 'recurso4@empresa.com', 71),
+('Telefone', '4321-8765', 71),
+('Email', 'recurso5@empresa.com',72),
+('Telefone', '6543-2198',72),
+('Email', 'recurso6@empresa.com', 73),
+('Telefone', '2198-6543', 73),
+('Email', 'recurso7@empresa.com', 74),
+('Telefone', '5432-1987', 74),
+('Email', 'recurso8@empresa.com', 75),
+('Telefone', '1987-6543', 75),
+('Email', 'recurso9@empresa.com', 76),
+('Telefone', '7654-3219', 77);
+
+SELECT * FROM Recursos;
+SELECT * FROM Projeto;
+SELECT * FROM Atividade;
+SELECT * FROM Cargos;
+SELECT * FROM Contato;
+SELECT * FROM Endereco;
+SELECT * FROM Equipe;
+SELECT * FROM Ferramentas;
+SELECT * FROM HistoricoSalario;
+SELECT * FROM Projeto;
+SELECT * FROM ProjetoAtividade;
+SELECT * FROM Tarefa;
