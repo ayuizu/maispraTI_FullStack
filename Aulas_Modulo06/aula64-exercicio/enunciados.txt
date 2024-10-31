@@ -1,0 +1,30 @@
+--------------------------------------------------
+-- A cafeteria BomGosto deseja controlar as suas vendas de café. A BomGosto controla suas vendas a partir de uma
+comanda com código único, data, o número da mesa do cliente e o nome do cliente registrados. Nos itens da comanda
+é possível relacionar vários cafés listados no cardápio que foram vendidos. Cada item da comanda possui o código do
+cardápio e a quantidade requisitada deste e, não é possível inserir o mesmo código de cardápio mais de uma vez na
+ mesma comanda. No cardápio é apresentado o nome único do café, a descrição da sua composição e o preço unitário.
+
+Cardapio(item_id,descricao,preco)
+Comanda(comanda_id,data_comanda,numero_mesa,nome_cliente, item_id_1, item_qtd_1, ..., item_id_6, item_qtd_6)
+
+---- NOVO 
+Cardapio (item_id, descricao, preco
+Comanda (comanda_id, data_comanda, numero_mesa,nome_cliente)
+ItensComanda(itemComanda_id, ic_comanda_id, ic_item_id, ic_item_qtd)
+
+
+-- Desenvolva os scripts SQL para atender cada uma das questões abaixo:
+
+-- 1. Faça uma listagem do cardápio ordenada por nome;
+-- 2. Apresente todas as comandas (código, data, mesa e nome do cliente) e os itens da comanda (código comanda, nome do café, descrição, quantidade, preço unitário e preço total do café) destas comandas;
+-- 3. Liste todas as comandas (código, data, mesa e nome do cliente) mais uma coluna com o valor total da comanda. Ordene por data esta listagem;
+-- 4. Faça a mesma listagem das comandas da questão anterior (6), mas traga apenas as comandas que possuem mais do que um tipo de café na comanda;
+-- 5. Qual o total de faturamento por data? Ordene por data esta consulta;
+-- 6. Quais são os cafés que nunca foram vendidos?
+-- 7. Escreva um script para excluir do cardápio os cafés que nunca foram vendidos?
+-- 8. Aumente em 10% o valor de todos os cafés da cafeteria.
+-- 9. Faça uma listagem do cardápio apresentando as seguintes colunas extras: quantidade de cafés vendidos e total vendido por café.
+-- 10. Diminua 5% do valor de todos os cafés que tiveram mais que 50 quantidades vendidas;
+
+-------------------------------------------------

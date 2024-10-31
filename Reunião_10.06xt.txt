@@ -1,0 +1,7 @@
+Primeira coisa: começar a codar
+
+
+PDF exportar query SQL e formatar
+Armazenar dados do momento que foi gerado relatório e salvar pdf >> entidade historico de relatorio >> tipo BLOB para guardar arquivos (binario)
+
+Calendário e notificações pro final se der tempo

@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
 // @SpringBootApplication(exclude = {SecurityAutoConfiguration.class}) usado para não ter autenticação no Postman
-@SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
+@SpringBootApplication
 
 public class  ApiUserApplication {
 
@@ -16,7 +16,18 @@ public class  ApiUserApplication {
 	}
 
 }
+/* No MySQL
+CREATE DATABASE Test;
+USE Test;
 
+CREATE TABLE Users(
+	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	username VARCHAR(30) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(50),
+    role VARCHAR(50)
+);
+ */
 
 /* No Postman POST http://localhost:8080/api/users (body - raw/json)
 {

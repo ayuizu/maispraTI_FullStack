@@ -1,0 +1,118 @@
+comanda_id;data;mesa;cliente;desc;valor un;qtd;valor tot;;;Rótulos de Linha;Soma de valor tot
+1;01/10/2024;1;João Silva;Café Expresso;4,5;2;9;;;1;45
+1;01/10/2024;1;João Silva;Bolo de Chocolate;12;1;12;;;2;41,5
+1;01/10/2024;1;João Silva;Bolo de Chocolate;12;2;24;;;3;38,5
+2;01/10/2024;2;Maria Oliveira;Café Americano;5;1;5;;;4;38
+2;01/10/2024;2;Maria Oliveira;Café Cappuccino;6,5;1;6,5;;;5;50
+2;01/10/2024;2;Maria Oliveira;Bolo de Cenoura;10;2;20;;;6;27
+2;01/10/2024;2;Maria Oliveira;Bolo de Cenoura;10;1;10;;;7;115
+3;02/10/2024;3;Ana Souza;Café com Leite;6;1;6;;;8;68,5
+3;02/10/2024;3;Ana Souza;Bolo de Fubá;9,5;1;9,5;;;9;36
+3;02/10/2024;3;Ana Souza;Bolo de Laranja;9;1;9;;;10;53,5
+3;02/10/2024;3;Ana Souza;Bolo de Morango;14;1;14;;;11;121
+4;02/10/2024;4;Carlos Pereira;Café Cappuccino;6,5;2;13;;;12;31,5
+4;02/10/2024;4;Carlos Pereira;Café Mocha;7;1;7;;;13;51
+4;02/10/2024;4;Carlos Pereira;Bolo de Laranja;9;2;18;;;14;103
+5;03/10/2024;5;Fernanda Lima;Café Macchiato;6;1;6;;;15;61,5
+5;03/10/2024;5;Fernanda Lima;Bolo de Chocolate;12;1;12;;;16;69,5
+5;03/10/2024;5;Fernanda Lima;Bolo de Limão;10,5;2;21;;;17;88,5
+5;03/10/2024;5;Fernanda Lima;Bolo de Coco;11;1;11;;;18;60
+6;03/10/2024;1;Ricardo Mendes;Café Latte;6,5;2;13;;;19;35,5
+6;03/10/2024;1;Ricardo Mendes;Bolo de Morango;14;1;14;;;20;41
+7;04/10/2024;2;Laura Martins;Café Caramel;7,5;8;60;;;21;43
+7;04/10/2024;2;Laura Martins;Bolo Red Velvet;15;2;30;;;22;31
+7;04/10/2024;2;Laura Martins;Bolo de Maracujá;12,5;1;12,5;;;23;68,5
+7;04/10/2024;2;Laura Martins;Bolo de Maracujá;12,5;1;12,5;;;24;29
+8;04/10/2024;3;Paulo Souza;Café Frappuccino;8;1;8;;;25;69,5
+8;04/10/2024;3;Paulo Souza;Bolo de Cenoura;10;1;10;;;26;94
+8;04/10/2024;3;Paulo Souza;Bolo de Limão;10,5;1;10,5;;;27;34
+8;04/10/2024;3;Paulo Souza;Bolo de Banana;10;4;40;;;28;34,5
+9;05/10/2024;4;Mariana Costa;Café Gelado;5,5;2;11;;;29;14
+9;05/10/2024;4;Mariana Costa;Bolo de Coco;11;1;11;;;30;74,5
+9;05/10/2024;4;Mariana Costa;Bolo de Morango;14;1;14;;;(vazio);
+10;05/10/2024;5;Gabriel Santos;Café Expresso;4,5;1;4,5;;;Total Geral;1667,5
+10;05/10/2024;5;Gabriel Santos;Café Mocha;7;3;21;;;;
+10;05/10/2024;5;Gabriel Santos;Bolo de Laranja;9;2;18;;;;
+10;05/10/2024;5;Gabriel Santos;Bolo de Banana;10;1;10;;;;
+11;06/10/2024;1;Bianca Rocha;Café Americano;5;5;25;;;;
+11;06/10/2024;1;Bianca Rocha;Café Latte;6,5;1;6,5;;;;
+11;06/10/2024;1;Bianca Rocha;Bolo de Chocolate;12;1;12;;;;
+11;06/10/2024;1;Bianca Rocha;Bolo de Fubá;9,5;5;47,5;;;;
+11;06/10/2024;1;Bianca Rocha;Bolo Red Velvet;15;2;30;;;;
+12;06/10/2024;2;Marcos Ferreira;Café com Leite;6;2;12;;;;
+12;06/10/2024;2;Marcos Ferreira;Café Gelado;5,5;1;5,5;;;;
+12;06/10/2024;2;Marcos Ferreira;Bolo de Morango;14;1;14;;;;
+13;07/10/2024;3;Pedro Lima;Café com Leite;6;2;12;;;;
+13;07/10/2024;3;Pedro Lima;Café Cappuccino;6,5;1;6,5;;;;
+13;07/10/2024;3;Pedro Lima;Bolo de Cenoura;10;1;10;;;;
+13;07/10/2024;3;Pedro Lima;Bolo de Maracujá;12,5;1;12,5;;;;
+13;07/10/2024;3;Pedro Lima;Bolo de Banana;10;1;10;;;;
+14;07/10/2024;4;Roberta Almeida;Café Cappuccino;6,5;5;32,5;;;;
+14;07/10/2024;4;Roberta Almeida;Café Mocha;7;7;49;;;;
+14;07/10/2024;4;Roberta Almeida;Bolo de Limão;10,5;1;10,5;;;;
+14;07/10/2024;4;Roberta Almeida;Bolo de Coco;11;1;11;;;;
+15;08/10/2024;5;Thiago Nogueira;Café Mocha;7;1;7;;;;
+15;08/10/2024;5;Thiago Nogueira;Café Macchiato;6;1;6;;;;
+15;08/10/2024;5;Thiago Nogueira;Café Gelado;5,5;2;11;;;;
+15;08/10/2024;5;Thiago Nogueira;Bolo de Cenoura;10;1;10;;;;
+15;08/10/2024;5;Thiago Nogueira;Bolo Red Velvet;15;1;15;;;;
+15;08/10/2024;5;Thiago Nogueira;Bolo de Maracujá;12,5;1;12,5;;;;
+16;08/10/2024;1;Lucas Ribeiro;Café Expresso;4,5;1;4,5;;;;
+16;08/10/2024;1;Lucas Ribeiro;Café Macchiato;6;1;6;;;;
+16;08/10/2024;1;Lucas Ribeiro;Café Latte;6,5;1;6,5;;;;
+16;08/10/2024;1;Lucas Ribeiro;Bolo de Chocolate;12;2;24;;;;
+16;08/10/2024;1;Lucas Ribeiro;Bolo de Fubá;9,5;3;28,5;;;;
+17;09/10/2024;2;Carla Martins;Café Americano;5;1;5;;;;
+17;09/10/2024;2;Carla Martins;Café Latte;6,5;1;6,5;;;;
+17;09/10/2024;2;Carla Martins;Café Frappuccino;8;1;8;;;;
+17;09/10/2024;2;Carla Martins;Bolo de Chocolate;12;1;12;;;;
+17;09/10/2024;2;Carla Martins;Bolo de Cenoura;10;3;30;;;;
+17;09/10/2024;2;Carla Martins;Bolo de Laranja;9;3;27;;;;
+18;09/10/2024;3;Felipe Gonçalves;Café com Leite;6;2;12;;;;
+18;09/10/2024;3;Felipe Gonçalves;Café Mocha;7;2;14;;;;
+18;09/10/2024;3;Felipe Gonçalves;Café Frappuccino;8;3;24;;;;
+18;09/10/2024;3;Felipe Gonçalves;Bolo de Cenoura;10;1;10;;;;
+19;09/10/2024;4;Isabela Teixeira;Café Cappuccino;6,5;1;6,5;;;;
+19;09/10/2024;4;Isabela Teixeira;Café Caramel;7,5;1;7,5;;;;
+19;09/10/2024;4;Isabela Teixeira;Bolo de Laranja;9;1;9;;;;
+19;09/10/2024;4;Isabela Teixeira;Bolo de Maracujá;12,5;1;12,5;;;;
+20;10/10/2024;5;Gustavo Melo;Café Mocha;7;1;7;;;;
+20;10/10/2024;5;Gustavo Melo;Café Macchiato;6;1;6;;;;
+20;10/10/2024;5;Gustavo Melo;Bolo de Morango;14;2;28;;;;
+21;10/10/2024;1;Sofia Fernandes;Café Americano;5;4;20;;;;
+21;10/10/2024;1;Sofia Fernandes;Café com Leite;6;1;6;;;;
+21;10/10/2024;1;Sofia Fernandes;Café Macchiato;6;1;6;;;;
+21;10/10/2024;1;Sofia Fernandes;Bolo de Coco;11;1;11;;;;
+22;11/10/2024;2;Thiago Costa;Café Expresso;4,5;1;4,5;;;;
+22;11/10/2024;2;Thiago Costa;Café Americano;5;2;10;;;;
+22;11/10/2024;2;Thiago Costa;Café Latte;6,5;1;6,5;;;;
+22;11/10/2024;2;Thiago Costa;Bolo de Banana;10;1;10;;;;
+23;11/10/2024;3;Beatriz Lima;Café Expresso;4,5;1;4,5;;;;
+23;11/10/2024;3;Beatriz Lima;Café Cappuccino;6,5;4;26;;;;
+23;11/10/2024;3;Beatriz Lima;Café Frappuccino;8;1;8;;;;
+23;11/10/2024;3;Beatriz Lima;Bolo Red Velvet;15;2;30;;;;
+24;12/10/2024;4;Daniel Barbosa;Café Cappuccino;6,5;1;6,5;;;;
+24;12/10/2024;4;Daniel Barbosa;Café Latte;6,5;1;6,5;;;;
+24;12/10/2024;4;Daniel Barbosa;Café Gelado;5,5;1;5,5;;;;
+24;12/10/2024;4;Daniel Barbosa;Bolo de Limão;10,5;1;10,5;;;;
+25;12/10/2024;5;Aline Souza;Café Mocha;7;1;7;;;;
+25;12/10/2024;5;Aline Souza;Café Latte;6,5;5;32,5;;;;
+25;12/10/2024;5;Aline Souza;Café Frappuccino;8;1;8;;;;
+25;12/10/2024;5;Aline Souza;Bolo de Chocolate;12;1;12;;;;
+25;12/10/2024;5;Aline Souza;Bolo de Cenoura;10;1;10;;;;
+26;13/10/2024;1;Eduardo Araújo;Café Mocha;7;1;7;;;;
+26;13/10/2024;1;Eduardo Araújo;Café Macchiato;6;1;6;;;;
+26;13/10/2024;1;Eduardo Araújo;Bolo de Coco;11;1;11;;;;
+26;13/10/2024;1;Eduardo Araújo;Bolo de Morango;14;5;70;;;;
+27;13/10/2024;2;Camila Nunes;Café Macchiato;6;1;6;;;;
+27;13/10/2024;2;Camila Nunes;Café Gelado;5,5;1;5,5;;;;
+27;13/10/2024;2;Camila Nunes;Bolo de Maracujá;12,5;1;12,5;;;;
+27;13/10/2024;2;Camila Nunes;Bolo de Banana;10;1;10;;;;
+28;14/10/2024;3;João Almeida;Café Americano;5;1;5;;;;
+28;14/10/2024;3;João Almeida;Café Gelado;5,5;1;5,5;;;;
+28;14/10/2024;3;João Almeida;Bolo de Chocolate;12;2;24;;;;
+29;14/10/2024;4;Marina Duarte;Café Americano;5;1;5;;;;
+29;14/10/2024;4;Marina Duarte;Bolo de Laranja;9;1;9;;;;
+30;15/10/2024;5;Rafael Silva;Café Caramel;7,5;1;7,5;;;;
+30;15/10/2024;5;Rafael Silva;Bolo de Cenoura;10;1;10;;;;
+30;15/10/2024;5;Rafael Silva;Bolo de Fubá;9,5;6;57;;;;

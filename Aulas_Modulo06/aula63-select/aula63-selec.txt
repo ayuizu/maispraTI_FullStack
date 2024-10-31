@@ -62,7 +62,6 @@ SELECT Recursos.nomeRecurso, Cargos.nomeCargo FROM Recursos INNER JOIN Cargos ON
 -- LEFT JOIN (aparecem todos do primeiro - segundo NULL)
 SELECT Recursos.nomeRecurso, Cargos.nomeCargo FROM Recursos LEFT JOIN Cargos ON Recursos.Cargo_idCargo = Cargos.idCargo;
 
-
 -- RIGHT JOIN (aparecem todos do segundo - primeiro NULL)
 INSERT INTO Cargos(nomeCargo,descricao)
 VALUES('DevOps','Não sei o que faz');
@@ -71,3 +70,28 @@ SELECT Recursos.nomeRecurso, Cargos.nomeCargo FROM Recursos RIGHT JOIN Cargos ON
 -- Existe o FULL JOIN ou FULL OUTER JOIN (não tem no MySQL) que retorna todos os registros dos dois lados, mesmo que não tenha correspondência do outro lado
 
 -- UNION junta os dados das duas tabelas, mesmo que não tenha lógica (ex: recursos.idCargo = 3, cargos.idCargo=1)
+
+-- Ordenar por salário recursos que são Desenvolvedores
+SELECT nomeRecurso, nomeCargo, salario FROM Recursos LEFT JOIN Cargos 
+ON Recursos.Cargos_IdCargos = Cargos.idCargos
+WHERE cargos.nomeCargo = "Desenvolvedor"
+ORDER BY salario;
+
+-- Quais ferramentas cada dev trabalha
+SELECT Recursos.nomeRecurso, Cargos.nomeCargo, Ferramenta.nomeFerramenta, Ferrramenta.versao FROM Recursos
+INNER JOIN FerramentasRecursos
+	ON Recursos.idRecursos = FerramentasRecursos.idRecursos
+INNER JOIN Ferramentas
+	ON FerramentasRecursos.Ferramentas_idRecursos = Ferramentas.idFerramentas;
+INNER JOIN Cargos
+	ON Recursos.Cargos_idCargos = cargos.idCargos
+	WHERE nomeCargo="Desenvolvedor"
+--GROUP BY [......]
+
+-- Endereço dos desenvolvedores
+SELECT Recursos.nomeRecurso, Cargos.nomeCargo, Endereco.endLogradouro, Endereco.endNumero, Endereco.endComplemento, Endereco.endBairro, Endereco.endCidade, Endereco.endEstado, Endereco.endCEP FROM Recursos
+INNER JOIN Cargos
+	ON Recursos.cargo_idCargo = Cargo.idCargo
+INNER JOIN Endereco
+	ON Recursos.Endereco_idEndereco = Endereco.idEndereco
+WHERE Cargos.nomeCargo="Desenvolvedor" AND Endereco.endCidade="Porto Alegre";
