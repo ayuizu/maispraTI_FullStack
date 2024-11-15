@@ -9,11 +9,14 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
-import java.lang.classfile.Signature;
+//import java.lang.classfile.Signature;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
+
+import io.jsonwebtoken.security.Keys;
+import java.security.Key;
 
 // Anotação @Component:
 // - Indica que essa classe é um bean Spring e será gerenciada pelo contêiner de IoC.
@@ -55,20 +58,22 @@ public class JwtTokenProvider {
         return Jwts.parserBuilder().setSigningKey(secretKey).build().parseClaimsJws(token).getBody();
         //parser() depracated - trocar por parserBuilder(), adicionado .build() para parar de dar erro
     }
-
-    private String generateToken(UserDetails userDetails) {
+    //as duas funcoes abaixo sao separadas para facilitar manutencao
+    public String generateToken(UserDetails userDetails) {
         Map<String, Object> claims = new HashMap<>();
         return createToken(claims, userDetails.getUsername());
     }
     //Criar Token
+    //Esse metodo recebe um Map de dados (claims) e uma String (subject), que serão incorporados ao token JWT gerado.
     private String createToken(Map<String, Object> claims, String subject) {
-        return Jwts.builder()
-                .setClaims(claims)
-                .setSubject(subject)
-                .setIssuedAt()
-                .setExpiration(new Date(System.currentTimeMillis()+1000*60*60*10))
-                .signWith(SignatureAlgorithm.HS256, secretKey) //deprecated
-                .compact();
+        Key key = Keys.hmacShaKeyFor(secretKey.getBytes()); // Convertendo secretKey para Key
+        return Jwts.builder() //Cria uma nova instância do JwtBuilder, que é responsável por construir o token JWT.
+                .setClaims(claims) //Define as declarações (informações) que serão incluídas no token JWT. As claims podem conter informações específicas do usuário ou sessão, como ID do usuário ou permissões.
+                .setSubject(subject) //Define o "subject" do token, que representa o dono do token (por exemplo, o nome de usuário ou ID).
+                .setIssuedAt(new Date(System.currentTimeMillis())) //Define a data e hora de emissão do token.
+                .setExpiration(new Date(System.currentTimeMillis()+1000*60*60*10)) //Define a data e hora de expiração do token, usando o tempo atual mais 10 horas.
+                .signWith(key, SignatureAlgorithm.HS256) //deprecated Assina o token usando o algoritmo de assinatura HS256 e uma chave secreta (secretKey).
+                .compact(); //Finaliza a construção do token JWT e retorna uma String que representa o token JWT
     }
     //Verificar validade do token
     public boolean isTokenValid(String token, UserDetails userDetails) {

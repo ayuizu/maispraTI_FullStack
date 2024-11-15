@@ -1,6 +1,5 @@
 package com.example.api_user.controller;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,8 +22,6 @@ import java.util.List;
 // - Esse caminho pode ser refinado em cada metodo.
 
 public class UserController {
-
-
     // Anotação @Autowired:
     // - Spring gerencia a criação e injeção dessa instância de UserService automaticamente.
     // - O @Autowired indica ao Spring que essa variável (userService) será injetada automaticamente, sem necessidade de instanciá-la manualmente.
